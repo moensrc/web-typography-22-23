@@ -6,10 +6,6 @@ Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
 
-body {
-	background-color: black;
-}
-
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
@@ -38,13 +34,21 @@ body {
 }
 
 .voice2 {
-	font-weight: bold;
 	font-family: "Brenner Sans";
-	font-style: Normal;
+	font-style: normal;
 	font-weight: 800;
-	color: white;
+	font-size: 1.2em;
+	color: black;
 
 	right: 0;
+}
+
+.voice3 {
+	font-family: "Brenner Sans";
+	font-style: normal;
+	font-weight: 800;	
+	color: crimson;
+	text-transform: uppercase;
 }
 
 /* **********************************************
@@ -132,31 +136,37 @@ You probably want to change the styling.
 }
 
 .p0.on span:nth-of-type(9),
-.p0.on span:nth-of-type(10) {
+.p0.on span:nth-of-type(10),
+.p0.on span:nth-of-type(11) {
 	opacity: 1;
 	transition: 0s 3s;
 }
 
-.p0.on span:nth-of-type(11) {
-	opacity: 1;
-	transition: 0s 3.7s;
-}
-
 .p1.on {
-	/* background: hotpink; */
 	color: red;
-	font-size: 24px;
 }
 
-.p8.on {
-	transform: translateY(-1.5em);
+.p8.on,
+.p11.on,
+.p14.on,
+.p17.on,
+.p19.on {
+	transform: translateY(-1.75em);
 }
 
-.p8.off {
+.p8.off,
+.p11.off,
+.p14.off,
+.p17.off,
+.p19.off {
 	animation: staying-text 1s;
 }
 
-.p9 {
+.p9,
+.p12,
+.p15,
+.p18,
+.p20 {
 	right: unset;
 	left: 0;
 }
@@ -187,6 +197,74 @@ Sounds.
 	a sound starts.
 *********************************************  */
 
+@keyframes siren-1-movement {
+	0% {
+		transform: scale(1) rotate(0);
+	}
+	10% {
+		transform: scale(1.08) rotate(-.5deg);
+	}
+	20% {
+		transform: scale(1.1) rotate(.5deg);
+	}
+	30% {
+		transform: scale(1.08) rotate(-.5deg);
+	}
+	40% {
+		transform: scale(1.1) rotate(.5deg);
+	}
+	50% {
+		transform: scale(1.08) rotate(-.5deg);
+	}
+	60% {
+		transform: scale(1.1) rotate(.5deg);
+	}
+	80% {
+		transform: scale(1) rotate(0);
+	}
+	100% {
+		transform: scale(1) rotate(0);
+	}
+}
+
+@keyframes siren-1-background {
+	0% {
+		background-color: black;
+	}
+	10% {
+		background-color: darkred;	
+	}
+	20% {
+		background-color: red;	
+	}
+	30% {
+		background-color: darkred;	
+	}
+	40% {
+		background-color: red;	
+	}
+	50% {
+		background-color: darkred;
+	}
+	60% {
+		background-color: red;	
+	}
+	80% {
+		background-color: darkred;
+	}
+	100% {
+		background-color: black;
+	}
+}
+
+.sound1 #video-container {
+	animation: siren-1-movement 1.2s;
+}
+
+body.sound1  {
+	animation: siren-1-background 1.2s;
+}
+
 /* The moment the class .sound1 is added to the body, the background is yellow */
 /* .sound1 {
 	
@@ -205,13 +283,16 @@ Basic layout.
 
 body {
 	display: grid;
+	justify-content: center;
 	height: 100vh;
 	margin: 0;
-	justify-content: center;
+
+	background-color: black;
 }
+
 #video-container {
-	margin: auto;
 	position: relative;
+	margin: auto;
 }
 
 #video-mask {
