@@ -142,15 +142,22 @@ You probably want to change the styling.
 	transition: 0s 3s;
 }
 
-.p1.on {
+/* .p1.on {
 	color: red;
-}
+} */
 
 .p8.on,
 .p11.on,
 .p14.on,
 .p17.on,
-.p19.on {
+.p19.on,
+.p22.on,
+.p25.on,
+.p28.on,
+.p30.on,
+.p33.on,
+.p36.on,
+.p38.on {
 	transform: translateY(-1.75em);
 }
 
@@ -158,7 +165,14 @@ You probably want to change the styling.
 .p11.off,
 .p14.off,
 .p17.off,
-.p19.off {
+.p19.off,
+.p22.off,
+.p25.off,
+.p28.off,
+.p30.off,
+.p33.off,
+.p36.off,
+.p38.off {
 	animation: staying-text 1s;
 }
 
@@ -166,7 +180,14 @@ You probably want to change the styling.
 .p12,
 .p15,
 .p18,
-.p20 {
+.p20,
+.p23,
+.p26,
+.p29,
+.p31,
+.p34,
+.p37,
+.p39 {
 	right: unset;
 	left: 0;
 }
