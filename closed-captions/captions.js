@@ -7,8 +7,10 @@ captions[4] = ['17.369','20'];
 captions[5] = ['20.1','23.3'];
 	//Fuck off, skin-job!
 captions[6] = ['23.3','25.2'];
-	
+
+	//And dreadfully distinct against the dark, a tall white fountain played...
 captions[7] = ['26.8','31.6'];
+	// Cells, cells
 captions[8] = ['32.7','33'];
 captions[9] = ['33.2','34'];
 	//Have you ever been in an institution?

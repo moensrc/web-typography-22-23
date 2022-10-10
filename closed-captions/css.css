@@ -5,18 +5,23 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+
+body {
+	background-color: black;
+}
+
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
-	top: 0;
-	color: white;
 	margin: 1em;
+	bottom: 0;
 }
 
 #closed-captions .on {
 	opacity: 1;
 }
+
 #closed-captions .off {
 	transition: .2s;
 	opacity: 0;
@@ -26,6 +31,10 @@ Feel free to adjust the defaults to your needs.
 	font-family: "Brenner Mono";
 	font-style: normal;
 	font-weight: 400;
+	color: greenyellow;
+	background-color: black;
+
+	left: 0;
 }
 
 .voice2 {
@@ -33,6 +42,9 @@ Feel free to adjust the defaults to your needs.
 	font-family: "Brenner Sans";
 	font-style: Normal;
 	font-weight: 800;
+	color: white;
+
+	right: 0;
 }
 
 /* **********************************************
@@ -43,8 +55,34 @@ The first paragraph, with extended timing for
 	spoken.
 You probably want to change the styling.
 ********************************************** */
+
+/* Animation keeps selected p or span in place for longer after it is done being said in the video. */
+@keyframes staying-text {
+	0% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
 .p0 span {
 	opacity: 0;
+}
+
+/* Spans for KD6-3.7 */
+.p0.on span:nth-of-type(2),
+.p0.on span:nth-of-type(3),
+.p0.on span:nth-of-type(4),
+.p0.on span:nth-of-type(5),
+.p0.on span:nth-of-type(6),
+.p0.on span:nth-of-type(7),
+.p0.on span:nth-of-type(8) {
+	font-weight: 800;
 }
 
 .p0.on span:first-of-type {
@@ -93,14 +131,10 @@ You probably want to change the styling.
 	transition: 0s 2s;
 }
 
-.p0.on span:nth-of-type(9) {
-	opacity: 1;
-	transition: 0s 3s;
-}
-
+.p0.on span:nth-of-type(9),
 .p0.on span:nth-of-type(10) {
 	opacity: 1;
-	transition: 0s 3.2s;
+	transition: 0s 3s;
 }
 
 .p0.on span:nth-of-type(11) {
@@ -109,9 +143,41 @@ You probably want to change the styling.
 }
 
 .p1.on {
-	background: hotpink;
+	/* background: hotpink; */
 	color: red;
-	font-size: 200px;
+	font-size: 24px;
+}
+
+.p8.on {
+	transform: translateY(-1.5em);
+}
+
+.p8.off {
+	animation: staying-text 1s;
+}
+
+.p9 {
+	right: unset;
+	left: 0;
+}
+
+
+
+.p9.on {
+	opacity: 1;
+	transition: 0s 0.3s;
+}
+
+.p41.on {
+	font-size: 20px;
+}
+
+.p42.on {
+	font-size: 24px;
+}
+
+.p43.on {
+	font-size: 28px;
 }
 
 /* **********************************************
@@ -122,14 +188,14 @@ Sounds.
 *********************************************  */
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
+/* .sound1 {
 	
-}
+} */
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
-.sound1 #video-mask {
+/* .sound1 #video-mask {
 	
-}
+} */
 
 
 /* **********************************************
@@ -147,6 +213,7 @@ body {
 	margin: auto;
 	position: relative;
 }
+
 #video-mask {
 	aspect-ratio: 240.5/100;
 	display: grid;
