@@ -5,7 +5,36 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+/* Layout */
+body {
+	display: grid;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
 
+	background-color: black;
+}
+
+#video-container {
+	position: relative;
+	margin: auto;
+}
+
+#video-mask {
+	aspect-ratio: 240.5/100;
+	display: grid;
+	overflow: hidden;
+	align-content: center;
+	transition: 1s;
+}
+
+iframe {
+	width: 80vw;
+	height: 53.33333333vw;
+	margin-top: -0.35vw;
+}
+
+/* Basic mechanics */
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
@@ -23,8 +52,10 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 
+/* Voice specific styling */
 .voice1 {
 	font-family: "Brenner Mono";
+	font-size: 1.25em;
 	font-style: normal;
 	font-weight: 400;
 	color: greenyellow;
@@ -43,13 +74,25 @@ Feel free to adjust the defaults to your needs.
 	right: 0;
 }
 
-.voice3 {
+#closed-captions p.voice3 {
 	font-family: "Brenner Sans";
 	font-style: normal;
 	font-weight: 800;	
 	font-size: 32px;
-	color: crimson;
+	color: red;
 	text-transform: uppercase;
+
+	width: 80vw;
+	margin: 0 0 26.667vh 0;
+	text-align: center;
+}
+
+.p1.voice2, 
+.p3.voice2, 
+.p4.voice2, 
+.p5.voice2, 
+.p7.voice2 {
+	color:white;
 }
 
 /* **********************************************
@@ -88,6 +131,8 @@ You probably want to change the styling.
 .p0.on span:nth-of-type(8) {
 	font-weight: 800;
 }
+
+/* Words of codename in p0 appear 1 by 1 */
 
 .p0.on span:first-of-type {
 	opacity: 1;
@@ -142,18 +187,6 @@ You probably want to change the styling.
 	transition: 0s 3s;
 }
 
-/* .p1.on {
-	color: red;
-} */
-
-.p1.voice2, 
-.p3.voice2, 
-.p4.voice2, 
-.p5.voice2, 
-.p7.voice2 {
-	color:white;
-}
-
 .p8.on,
 .p11.on,
 .p14.on,
@@ -166,7 +199,8 @@ You probably want to change the styling.
 .p33.on,
 .p36.on,
 .p38.on {
-	transform: translateY(-1.75em);
+	transform: translateY(-5em);
+	font-size: 2.5em;
 }
 
 .p8.off,
@@ -198,9 +232,9 @@ You probably want to change the styling.
 .p39 {
 	right: unset;
 	left: 0;
+	font-size: 2.5em;
+	transform: translateY(-3.5em);
 }
-
-
 
 .p9.on {
 	opacity: 1;
@@ -216,14 +250,6 @@ You probably want to change the styling.
 	transform: translateY(-1.75em);
 }
 
-.p43 span {
-	opacity: 0;
-}
-
-/* .p43.off span {
-	font-size: 200px;
-} */
-
 .p43.on {
 	margin: 0 !important;
 	width: 100%;
@@ -234,6 +260,10 @@ You probably want to change the styling.
 	text-align: center;
 
 	margin-bottom: -0.15em;
+}
+
+.p43 span {
+	opacity: 0;
 }
 
 /* Last Words "Within cells interlinked" appear 1 by 1 */
@@ -350,53 +380,125 @@ body.sound1  {
 
 } */
 
-/* SOUND 3, 5, 7 */
+/* SOUND 3,5,7 &  */
 /* Inspired by codepen: https://codepen.io/P1N2O/pen/pyBNzX */
-body.sound3,
-body.sound5,
+
+body.sound3 {
+	background: linear-gradient(-45deg, greenyellow, black);
+	animation: sound-3-gradient 1.5s ease-in forwards;
+	background-size: 400% 400%;
+}
+
+body.sound4 {
+	background: revert;
+	animation: sound-4-flash 1s ease-in forwards;
+}
+
+body.sound5 {
+	background: linear-gradient(-45deg, greenyellow, black);
+	animation: sound-5-gradient 1.5s ease-in forwards;
+	background-size: 400% 400%;
+}
+
+body.sound6 {
+	background: revert;
+	animation: sound-6-flash 1s ease-in forwards;
+}
+
 body.sound7 {
-	animation: none;
-	animation: green-gradient 1.5s ease-in;
-	height: 100vh;
+	background: linear-gradient(-45deg, greenyellow, black);
+	animation: sound-7-gradient 1.5s ease-in forwards;
+	background-size: 400% 400%;
+}
+
+body.sound8 {
+	background: revert;
+	animation: sound-8-flash 1s ease-in forwards;
 }
 
 
-@keyframes green-gradient {
+@keyframes sound-3-gradient {
 	0% {
-		background: linear-gradient(-45deg, greenyellow, black);
-		background-size: 200% 200%;
 		background-position: 0% 20%;
 	}
 	90% {
-		background: linear-gradient(-45deg, greenyellow, black);
-		background-size: 200% 200%;
 		background-position: 100% 100%;
 	}
 	100% {
-		background: black;
+		background-position: 80% 80%;
 	}
 }
 
-/* SOUND 4, 6, 8 */
-body.sound4,
-body.sound6,
-body.sound8 {
-	animation: none;
-	animation: green-flash 1s ease-in;
-}
-
-@keyframes green-flash {
+@keyframes sound-5-gradient {
 	0% {
-		background: black;
+		background-position: 0% 20%;
 	}
-	20% {
-		background: greenyellow;
-	}
-	80% {
-		background: greenyellow;
+	90% {
+		background-position: 100% 100%;
 	}
 	100% {
-		background: black;
+		background-position: 80% 80%;
+	}
+}
+
+@keyframes sound-7-gradient {
+	0% {
+		background-position: 0% 20%;
+	}
+	90% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 80% 80%;
+	}
+}
+
+
+
+
+
+@keyframes sound-4-flash {
+	0% {
+		background-color: black;
+	}
+	20% {
+		background-color: greenyellow;
+	}
+	80% {
+		background-color: greenyellow;
+	}
+	100% {
+		background-color: black;
+	}
+}
+
+@keyframes sound-6-flash {
+	0% {
+		background-color: black;
+	}
+	20% {
+		background-color: greenyellow;
+	}
+	80% {
+		background-color: greenyellow;
+	}
+	100% {
+		background-color: black;
+	}
+}
+
+@keyframes sound-8-flash {
+	0% {
+		background-color: black;
+	}
+	20% {
+		background-color: greenyellow;
+	}
+	80% {
+		background-color: greenyellow;
+	}
+	100% {
+		background-color: black;
 	}
 }
 
@@ -406,31 +508,3 @@ body.sound8 {
 Basic layout.
 	Place the video in the center of the page.
 *********************************************  */
-
-body {
-	display: grid;
-	justify-content: center;
-	height: 100vh;
-	margin: 0;
-
-	background-color: black;
-}
-
-#video-container {
-	position: relative;
-	margin: auto;
-}
-
-#video-mask {
-	aspect-ratio: 240.5/100;
-	display: grid;
-	overflow: hidden;
-	align-content: center;
-	transition: 1s;
-}
-
-iframe {
-	width: 80vw;
-	height: 53.33333333vw;
-	margin-top: -0.35vw;
-}
