@@ -146,6 +146,14 @@ You probably want to change the styling.
 	color: red;
 } */
 
+.p1.voice2, 
+.p3.voice2, 
+.p4.voice2, 
+.p5.voice2, 
+.p7.voice2 {
+	color:white;
+}
+
 .p8.on,
 .p11.on,
 .p14.on,
@@ -217,7 +225,10 @@ Sounds.
 	style anything within the body the moment
 	a sound starts.
 *********************************************  */
+/* SOUND 0 */
 
+
+/* SOUND 1 */
 @keyframes siren-1-movement {
 	0% {
 		transform: scale(1) rotate(0);
@@ -285,6 +296,8 @@ Sounds.
 body.sound1  {
 	animation: siren-1-background 1.2s;
 }
+
+/* SOUND 3 */
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
 /* .sound1 {
