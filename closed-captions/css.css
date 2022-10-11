@@ -391,7 +391,7 @@ body.sound3 {
 
 body.sound4 {
 	background: revert;
-	animation: sound-4-flash 1s ease-in forwards;
+	animation: sound-4-flash 1s forwards;
 }
 
 body.sound5 {
@@ -402,7 +402,7 @@ body.sound5 {
 
 body.sound6 {
 	background: revert;
-	animation: sound-6-flash 1s ease-in forwards;
+	animation: sound-6-flash 1s forwards;
 }
 
 body.sound7 {
@@ -413,7 +413,7 @@ body.sound7 {
 
 body.sound8 {
 	background: revert;
-	animation: sound-8-flash 1s ease-in forwards;
+	animation: sound-8-flash 1s forwards;
 }
 
 
