@@ -207,16 +207,49 @@ You probably want to change the styling.
 	transition: 0s 0.3s;
 }
 
+/* Repeating line x3 */
 .p41.on {
-	font-size: 20px;
+	animation: staying-text 3.4s;
 }
 
 .p42.on {
-	font-size: 24px;
+	transform: translateY(-1.75em);
 }
 
+.p43 span {
+	opacity: 0;
+}
+
+/* .p43.off span {
+	font-size: 200px;
+} */
+
 .p43.on {
-	font-size: 28px;
+	margin: 0 !important;
+	width: 100%;
+	height: 100%;
+	/* overflow: hidden; */
+
+	font-size: 200px;
+	text-align: center;
+
+	margin-bottom: -0.15em;
+}
+
+/* Last Words "Within cells interlinked" appear 1 by 1 */
+.p43.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+}
+
+.p43.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: .1s ease-out .4s;
+}
+
+.p43.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: .1s ease-out .6s;
 }
 
 /* **********************************************
