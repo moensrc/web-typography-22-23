@@ -1,6 +1,7 @@
 # Web Typografie (2022/2023)
 Minor Vid, Rosella Moens
 
+
 ## Dag 1 (10/10/2022)
 ### Start project
 Voor het visueel maken van het geluid van dit **filmfragment uit Blade Runner 2049**, heb ik deze meerdere malen bekeken. Ik ben direct daarna een paar basis elementen op gaan zetten: ik heb hier bijvoorbeeld de tekst over de video geplaatst en twee voices van een typografie voorzien. 
@@ -27,11 +28,41 @@ Ik ben ook begonnen met het spelen met de geluiden uit de sounds array: Hoe geef
 
 
 ## Dag 2 (11/10/2022)
-### Repeating text 
+### Repeating text ("Within cells interlinked")
 Op .p41, .p42 en .p34 wordt dezelfde zin 3 keer herhaald. Ik wilde deze apart weergeven zodat het in de captions duidelijk is dat dit 3 keer wordt gezegd, aangezien het huidig op zijn plek blijft staan.
 
 **Styling:** De eerste twee malen dat K deze zin zegt, worden deze met behulp van de staying-text animation laten staan. Vervolgens wordt de laatste keer dat K dit zegt vormgegeven met een grote fontsize en duidt dit de laatste zin aan van deze test. 
 **Interval:** Om deze laatste zin ritme en belang te geven, heb ik gebruik gemaakt van transitions inclusief transition-delays om deze woorden woord voor woord te laten verschijnen op het scherm, wat impact creëert.
 
-### Next subject
+### Sound animatie/visualisatie 2.0
+Ik ben vervolgens weer gaan luisteren naar andere geluiden in het eerste fragment. De volgende sounds heb ik gevisualiseerd:
+* ***Sound 3*** Sound 3 smelt samen met sound4 en is gelijk aan sound5 en sound7. Het is een laagtonige zoem, die voor de pieptoon van het vorige geluid plaatsvind. Omdat dit de opbouw weergeeft, heb ik voor de visualisatie een gradient gebruikt. Deze gradient beweegt van rechts naar links en geeft dus een opbouwend moment voor het geluid en beeld erna.
+* ***Sound 4*** Sound 4 is het nageluid van sound3 en is gelijk aan sound6 en sound8. Het is een hoge pieptoon. Aangezien deze tonen (sound3 en sound4) samenkomen nadat K een 'juist' antwoord geeft, heb ik beide elementen groen gekleurd: dit geeft een confirmatie aan. Het piepgeluid wordt visueel gerepresenteerd door een scherpe felle groene kleur die zonder verloop in het scherm verschijnt.
 
+### Animation resets
+Het kostte mij veel tijd om de animaties die ik had gemaakt voor de sound visualisaties (zie hierboven) te stacken. Het kwam voor dat de animaties enkel 1 keer afspeelde. Met Vasilis heb ik gekeken naar mogelijke opties. Het was niet mogelijk om de animaties op de volgende sound te verwijderen, omdat hier nieuwe animaties op stonden. In JS heb ik een paar dingen geprobeerd, wat ik niet voor elkaar kreeg. Uiteindelijk zijn we voor de tijdelijke oplossing gekomen om de CSS animaties apart te maken voor al die verschillende sounds. Dus inplaats van dit:
+```css
+body.sound3,
+body.sound5,
+body.sound7 {
+	animation: green-gradient 1.5s ease-in;
+}
+```
+Naar dit:
+```css
+body.sound3 {
+    animation: sound-3-gradient 1.5s ease-in;
+}
+
+body.sound5 {
+    animation: sound-5-gradient 1.5s ease-in;
+}
+```
+### Tweaks
+Verder heb ik tweaks gedaan aan:
+* Het scherm waarop de zin die voice3 zegt verschijnt had nog een gebrek aan impact. Hier heb ik de tekst naar het midden geplaatst en een groter formaat gegeven. Ook de color red toegevoegd in plaats van crimson, voor een consistenter kleurenpalet.
+* De herhalende teksten van K en de tester zoals: "Cells, cells" en "Interlinked, interlinked", heb ik meer visuele ruimte gegeven door deze groter te maken. Ze vullen zo mooi de ruimte aan de linkerzijde van K tijdens de scene.
+* Hiërarchie in CSS-file voor mijn eigen overzicht.
+
+## Dag 3 (12/10/2022)
+### Nieuwe uitdaging
