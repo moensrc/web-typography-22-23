@@ -47,6 +47,7 @@ Feel free to adjust the defaults to your needs.
 	font-family: "Brenner Sans";
 	font-style: normal;
 	font-weight: 800;	
+	font-size: 32px;
 	color: crimson;
 	text-transform: uppercase;
 }
@@ -72,7 +73,6 @@ You probably want to change the styling.
 		opacity: 0;
 	}
 }
-
 
 .p0 span {
 	opacity: 0;
@@ -259,7 +259,22 @@ Sounds.
 	a sound starts.
 *********************************************  */
 /* SOUND 0 */
+@keyframes sound-0-shake {
+	0% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.6);
+	}
 
+	100% {
+		transform: scale(1);
+	}
+}
+
+.sound0 #video-container {
+	animation: sound-0-shake 1s forwards ease-in-out;
+}
 
 /* SOUND 1 */
 @keyframes siren-1-movement {
@@ -330,18 +345,62 @@ body.sound1  {
 	animation: siren-1-background 1.2s;
 }
 
-/* SOUND 3 */
+/* SOUND 2 */
+/* body.sound2 {
 
-/* The moment the class .sound1 is added to the body, the background is yellow */
-/* .sound1 {
-	
 } */
 
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
-/* .sound1 #video-mask {
-	
-} */
+/* SOUND 3, 5, 7 */
+/* Inspired by codepen: https://codepen.io/P1N2O/pen/pyBNzX */
+body.sound3,
+body.sound5,
+body.sound7 {
+	animation: none;
+	animation: green-gradient 1.5s ease-in;
+	height: 100vh;
+}
 
+
+@keyframes green-gradient {
+	0% {
+		background: linear-gradient(-45deg, greenyellow, black);
+		background-size: 200% 200%;
+		background-position: 0% 20%;
+	}
+	90% {
+		background: linear-gradient(-45deg, greenyellow, black);
+		background-size: 200% 200%;
+		background-position: 100% 100%;
+	}
+	100% {
+		background: black;
+	}
+}
+
+/* SOUND 4, 6, 8 */
+body.sound4,
+body.sound6,
+body.sound8 {
+	animation: none;
+	animation: green-flash 1s ease-in;
+}
+
+@keyframes green-flash {
+	0% {
+		background: black;
+	}
+	20% {
+		background: greenyellow;
+	}
+	80% {
+		background: greenyellow;
+	}
+	100% {
+		background: black;
+	}
+}
+
+/* SOUND 9 */
 
 /* **********************************************
 Basic layout.
