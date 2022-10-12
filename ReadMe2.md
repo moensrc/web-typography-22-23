@@ -24,7 +24,7 @@ Ik wilde met behulp van CSS sommige p's tijdelijk laten staan nadat deze de off-
 ### Sound animatie/visualisatie
 Ik ben ook begonnen met het spelen met de geluiden uit de sounds array: Hoe geef je een luid geluid vorm zonder het te omschrijven in tekst? Mijn eerste idee hierbij heb ik uitgewerkt voor het eerste geluid.
 
-* ***Sound 1*** Sound 1 is een luide beep die uit 1 geluid bestaat. Om dit visueel weer te geven heb ik de video-container en body gestyled wanneer het geluid afgaat. De videocontainer schudt met behulp van animation siren-1-movement en de body krijgt verschillende flikkerende achtergrondkleuren met animation siren-1-background. Deze movement in de animaties loopt op het geluid.
+***Sound 1*** Sound 1 is een luide beep die uit 1 geluid bestaat. Om dit visueel weer te geven heb ik de video-container en body gestyled wanneer het geluid afgaat. De videocontainer schudt met behulp van animation siren-1-movement en de body krijgt verschillende flikkerende achtergrondkleuren met animation siren-1-background. Deze movement in de animaties loopt op het geluid.
 
 
 ## Dag 2 (11/10/2022)
@@ -36,8 +36,9 @@ Op .p41, .p42 en .p34 wordt dezelfde zin 3 keer herhaald. Ik wilde deze apart we
 
 ### Sound animatie/visualisatie 2.0
 Ik ben vervolgens weer gaan luisteren naar andere geluiden in het eerste fragment. De volgende sounds heb ik gevisualiseerd:
-* ***Sound 3*** Sound 3 smelt samen met sound4 en is gelijk aan sound5 en sound7. Het is een laagtonige zoem, die voor de pieptoon van het vorige geluid plaatsvind. Omdat dit de opbouw weergeeft, heb ik voor de visualisatie een gradient gebruikt. Deze gradient beweegt van rechts naar links en geeft dus een opbouwend moment voor het geluid en beeld erna.
-* ***Sound 4*** Sound 4 is het nageluid van sound3 en is gelijk aan sound6 en sound8. Het is een hoge pieptoon. Aangezien deze tonen (sound3 en sound4) samenkomen nadat K een 'juist' antwoord geeft, heb ik beide elementen groen gekleurd: dit geeft een confirmatie aan. Het piepgeluid wordt visueel gerepresenteerd door een scherpe felle groene kleur die zonder verloop in het scherm verschijnt.
+***Sound 3*** Sound 3 smelt samen met sound4 en is gelijk aan sound5 en sound7. Het is een laagtonige zoem, die voor de pieptoon van het vorige geluid plaatsvind. Omdat dit de opbouw weergeeft, heb ik voor de visualisatie een gradient gebruikt. Deze gradient beweegt van rechts naar links en geeft dus een opbouwend moment voor het geluid en beeld erna.
+
+***Sound 4*** Sound 4 is het nageluid van sound3 en is gelijk aan sound6 en sound8. Het is een hoge pieptoon. Aangezien deze tonen (sound3 en sound4) samenkomen nadat K een 'juist' antwoord geeft, heb ik beide elementen groen gekleurd: dit geeft een confirmatie aan. Het piepgeluid wordt visueel gerepresenteerd door een scherpe felle groene kleur die zonder verloop in het scherm verschijnt.
 
 ### Animation resets
 Het kostte mij veel tijd om de animaties die ik had gemaakt voor de sound visualisaties (zie hierboven) te stacken. Het kwam voor dat de animaties enkel 1 keer afspeelde. Met Vasilis heb ik gekeken naar mogelijke opties. Het was niet mogelijk om de animaties op de volgende sound te verwijderen, omdat hier nieuwe animaties op stonden. In JS heb ik een paar dingen geprobeerd, wat ik niet voor elkaar kreeg. Uiteindelijk zijn we voor de tijdelijke oplossing gekomen om de CSS animaties apart te maken voor al die verschillende sounds. Dus inplaats van dit:
@@ -64,5 +65,18 @@ Verder heb ik tweaks gedaan aan:
 * De herhalende teksten van K en de tester zoals: "Cells, cells" en "Interlinked, interlinked", heb ik meer visuele ruimte gegeven door deze groter te maken. Ze vullen zo mooi de ruimte aan de linkerzijde van K tijdens de scene.
 * Hiërarchie in CSS-file voor mijn eigen overzicht.
 
+
 ## Dag 3 (12/10/2022)
-### Nieuwe uitdaging
+### Sound animatie/visualisatie 3.0
+***Sound 9*** Sound 9 is de aanhoudende pieptoon in de test scene. Dit geluid is vervelend en scherp. Deze pieptoon wordt steeds luider: het is overheersend en valt je oren lastig. Om dit voor Doven even irritant te maken, heb ik met animaties verschillende visualisaties uitgeprobeerd. Bijvoorbeeld het laten flashen van verschillende background-colors die steeds sneller flikkeren (Zie afbeeldingen). Dit vondt ik echter nog te subtiel en niet vervelend genoeg.
+<img src="./images/sound9-test.png" alt="Code voor Sound9 animatie test 1" width="48%">
+<img src="./images/sound9-test2.png" alt="Code voor Sound9 animatie test 2" width="48%">
+
+De volgende test was geïnspireerd door een [Codepen](https://codepen.io/web_designer_sanchit/pen/aaVPzq) die ik had gevonden. Deze maakt gebruik van een image overlay om zo een _glitch effect_ te creëeren. Dit kan je subtiel weergeven, maar met mate dit met snelheid wordt afgespeeld is het behoorlijk irritant. Hiervoor heb ik meerdere overlay afbeeldingen getest nadat de animatie in elkaar gebouwd was. 
+<img src="./gifs/sound9-texture.gif" alt="Clip with texture overlay 1" width="31%">
+<img src="./gifs/sound9-texture2.gif" alt="Clip with texture overlay 1" width="31%">
+<img src="./gifs/sound9-texture3.gif" alt="Clip with texture overlay 1" width="31%">
+
+### Repeating text ("Within cells interlinked") 2.0
+#### Feedback (12/10)
+Tijdens het voortgangsgesprek duidde Vasilis erop dat de laatste zin geschreeuwd lijkt te worden door het formaat in contrast met de rest. Dat wilde ik graag aanpassen zodat het niet verwarrend is voor deze doelgroep. 
