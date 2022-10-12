@@ -69,13 +69,15 @@ Verder heb ik tweaks gedaan aan:
 ## Dag 3 (12/10/2022)
 ### Sound animatie/visualisatie 3.0
 ***Sound 9*** Sound 9 is de aanhoudende pieptoon in de test scene. Dit geluid is vervelend en scherp. Deze pieptoon wordt steeds luider: het is overheersend en valt je oren lastig. Om dit voor Doven even irritant te maken, heb ik met animaties verschillende visualisaties uitgeprobeerd. Bijvoorbeeld het laten flashen van verschillende background-colors die steeds sneller flikkeren (Zie afbeeldingen). Dit vondt ik echter nog te subtiel en niet vervelend genoeg.
-<img src="./images/sound9-test.png" alt="Code voor Sound9 animatie test 1" width="48%">
-<img src="./images/sound9-test2.png" alt="Code voor Sound9 animatie test 2" width="48%">
+
+<img src="./images/sound9-test.png" alt="Code voor Sound9 animatie test 1" width="33%">
+<img src="./images/sound9-test2.png" alt="Code voor Sound9 animatie test 2" width="33%">
 
 De volgende test was geïnspireerd door een [Codepen](https://codepen.io/web_designer_sanchit/pen/aaVPzq) die ik had gevonden. Deze maakt gebruik van een image overlay om zo een _glitch effect_ te creëeren. Dit kan je subtiel weergeven, maar met mate dit met snelheid wordt afgespeeld is het behoorlijk irritant. Hiervoor heb ik meerdere overlay afbeeldingen getest nadat de animatie in elkaar gebouwd was. 
+
 <img src="./gifs/sound9-texture.gif" alt="Clip with texture overlay 1" width="31%">
-<img src="./gifs/sound9-texture2.gif" alt="Clip with texture overlay 1" width="31%">
-<img src="./gifs/sound9-texture3.gif" alt="Clip with texture overlay 1" width="31%">
+<img src="./gifs/sound9-texture2.gif" alt="Clip with texture overlay 2" width="31%">
+<img src="./gifs/sound9-texture3.gif" alt="Clip with texture overlay 3" width="31%">
 
 ### Repeating text ("Within cells interlinked") 2.0
 #### Feedback (12/10)
