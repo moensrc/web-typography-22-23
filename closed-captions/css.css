@@ -273,13 +273,12 @@ iframe {
 
 /* Line 3 "Within cells interlinked" */
 .p43 {
+	right: 0;
 	margin: 0;
 
-	text-align: center;
+	/* text-align: center; */
 	font-size: 30px;
-	width: 80vw;
 	color: greenyellow;
-	/* transition: .2s ease-in; */
 }
 
 

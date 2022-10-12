@@ -78,4 +78,5 @@ De volgende test was geïnspireerd door een [Codepen](https://codepen.io/web_des
 
 ### Repeating text ("Within cells interlinked") 2.0
 #### Feedback (12/10)
-Tijdens het voortgangsgesprek duidde Vasilis erop dat de laatste zin geschreeuwd lijkt te worden door het formaat in contrast met de rest. Dat wilde ik graag aanpassen zodat het niet verwarrend is voor deze doelgroep. 
+Tijdens het voortgangsgesprek duidde Vasilis erop dat de laatste zin geschreeuwd lijkt te worden door het formaat in contrast met de rest. Het is namelijk zo dat deze tekst over de hele video wordt weergegeven. Dat wilde ik graag aanpassen zodat het niet verwarrend is voor deze doelgroep. Ik wilde wel belang geven aan deze zin omdat dit het einde is van de test, maar het niet groot en schreeuwend weergeven.
+Ik heb dit opgelost door deze zin onder in het scherm te zetten en een groene kleur te geven.
