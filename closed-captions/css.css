@@ -1,10 +1,6 @@
-/* **********************************************
-Basic mechanics
-Hide all paragraphs by default
-Show them when they receive the class 'on'
-Hide them when they receive the class 'off'
-Feel free to adjust the defaults to your needs.
-********************************************** */
+/**********************/
+/*******DEFAULTS*******/
+/**********************/
 /* Layout */
 body {
 	display: grid;
@@ -34,7 +30,7 @@ iframe {
 	margin-top: -0.35vw;
 }
 
-/* Basic mechanics */
+/* Basic p mechanics */
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
@@ -78,18 +74,17 @@ iframe {
 	font-family: "Brenner Sans";
 	font-style: normal;
 	font-weight: 400;	
-	font-size: 32px;
+	font-size: 20px;
 	color: red;
-	text-shadow: black;
-	text-transform: lowercase;
+	text-shadow: 0 0 5px black;
+	text-transform: uppercase;
 
 	width: 80vw;
-	margin: 0 0 26.667vh 0;
+	margin: 0 0 32vh 0;
 	text-align: center;
 }
 
-
-
+/* When scene is dark, textcolor is white */
 .p1.voice2, 
 .p3.voice2, 
 .p4.voice2, 
@@ -188,22 +183,24 @@ iframe {
 	font-weight: 800;
 }
 
-.p8.on,
-.p11.on,
-.p14.on,
-.p17.on,
-.p19.on,
-.p22.on,
-.p25.on,
-.p28.on,
-.p30.on,
-.p33.on,
-.p36.on,
-.p38.on {
+/* Textlines from voice1 that need emphasis in cells-scene */
+.p8,
+.p11,
+.p14,
+.p17,
+.p19,
+.p22,
+.p25,
+.p28,
+.p30,
+.p33,
+.p36,
+.p38 {
 	transform: translateY(-5em);
 	font-size: 2.5em;
 }
 
+/* Textlines from voice1 that need emphasis in cells-scene */
 .p8.off,
 .p11.off,
 .p14.off,
@@ -216,9 +213,10 @@ iframe {
 .p33.off,
 .p36.off,
 .p38.off {
-	animation: staying-text 1.02s;
+	animation: staying-text 1.02s ease;
 }
 
+/* Textlines from voice2 that need emphasis in cells-scene */
 .p9,
 .p12,
 .p15,
@@ -257,30 +255,33 @@ iframe {
 	word-break: break-word;
 }
 
-/* Repeating line x3 */
+/* Repeating line x3 "Within cells interlinked" */
 .p41.on,
 .p42.on {
 	left: 0
 }
 
+/* Line 1 "Within cells interlinked" */
 .p41.on {
-	animation: staying-text 3.4s;
+	animation: staying-text 3.4s ease;
 }
 
+/* Line 2 "Within cells interlinked" */
 .p42.on {
 	transform: translateY(-1.75em);
 }
 
-.p43.on {
-	margin: 0 !important;
-	width: 100%;
-	height: 100%;
+/* Line 3 "Within cells interlinked" */
+.p43 {
+	margin: 0;
 
-	font-size: 200px;
 	text-align: center;
-
-	margin-bottom: -0.15em;
+	font-size: 30px;
+	width: 80vw;
+	color: greenyellow;
+	/* transition: .2s ease-in; */
 }
+
 
 .p43 span {
 	opacity: 0;
@@ -307,6 +308,10 @@ iframe {
 /**********************/
 
 /* SOUND 0 */
+.sound0 #video-container {
+	animation: sound-0-shake 1s forwards ease-in-out;
+}
+
 @keyframes sound-0-shake {
 	0% {
 		transform: scale(1);
@@ -320,11 +325,15 @@ iframe {
 	}
 }
 
-.sound0 #video-container {
-	animation: sound-0-shake 1s forwards ease-in-out;
+/* SOUND 1 */
+.sound1 #video-container {
+	animation: siren-1-movement 1.2s;
 }
 
-/* SOUND 1 */
+body.sound1  {
+	animation: siren-1-background 1.2s;
+}
+
 @keyframes siren-1-movement {
 	0% {
 		transform: scale(1) rotate(0);
@@ -385,14 +394,6 @@ iframe {
 	}
 }
 
-.sound1 #video-container {
-	animation: siren-1-movement 1.2s;
-}
-
-body.sound1  {
-	animation: siren-1-background 1.2s;
-}
-
 /* SOUND 2 */
 /* body.sound2 {
 
@@ -400,7 +401,6 @@ body.sound1  {
 
 /* SOUND 3,5,7 & 4,6,8 */
 /* Inspired by codepen: https://codepen.io/P1N2O/pen/pyBNzX */
-
 body.sound3 {
 	background: linear-gradient(-45deg, greenyellow, black);
 	animation: sound-3-gradient 1.5s ease-in forwards;
@@ -469,7 +469,6 @@ body.sound8 {
 		background-position: 80% 80%;
 	}
 }
-
 
 @keyframes sound-4-flash {
 	0% {
@@ -734,158 +733,4 @@ body.sound9 #video-container {
 }
 
 
-/* body.sound9 {
-	transition: .2s ease-in;
-	animation: sound-9-gradient 4s ease-in,
-	sound-9-slowflashes 5.75s ease-in 3s 4 forwards,
-	sound-9-fastflashes 2.875s ease-in 26.6s 4 forwards;
-}
 
-@keyframes sound-9-gradient {
-	0% {
-		background: linear-gradient(-45deg, red, black);
-		background-position: 0% 0%;
-		background-size: 400% 400%;
-	}
-	100% {
-		background: linear-gradient(-45deg, red, black);
-		background-position: 100% 100%;
-	}
-}
-
-@keyframes sound-9-slowflashes {
-	0% {
-		background: red;
-	}
-	5% {
-		background: darkred;
-	}
-	10% {
-		background: black;
-	}
-	15% {
-		background: red;
-	}
-	20% {
-		background: darkred;
-	}
-	25% {
-		background: black;
-	}
-	30% {
-		background: red;
-	}
-	35% {
-		background: darkred;
-	}
-	40% {
-		background: black;
-	}
-	45% {
-		background: red;
-	}
-	50% {
-		background: darkred;
-	}
-	55% {
-		background: black;
-	}
-	60% {
-		background: red;
-	}
-	65% {
-		background: darkred;
-	}
-	70% {
-		background: black;
-	}
-	75% {
-		background: red;
-	}
-	80% {
-		background: darkred;
-	}
-	85% {
-		background: black;
-	}
-	90% {
-		background: red;
-	}
-	95% {
-		background: darkred;
-	}
-	100% {
-		background: black;
-	}
-}
-
-@keyframes sound-9-fastflashes {
-	0% {
-		background: red;
-	}
-	5% {
-		background: darkred;
-	}
-	10% {
-		background: black;
-	}
-	15% {
-		background: red;
-	}
-	20% {
-		background: darkred;
-	}
-	25% {
-		background: black;
-	}
-	30% {
-		background: red;
-	}
-	35% {
-		background: darkred;
-	}
-	40% {
-		background: black;
-	}
-	45% {
-		background: red;
-	}
-	50% {
-		background: darkred;
-	}
-	55% {
-		background: black;
-	}
-	60% {
-		background: red;
-	}
-	65% {
-		background: darkred;
-	}
-	70% {
-		background: black;
-	}
-	75% {
-		background: red;
-	}
-	80% {
-		background: darkred;
-	}
-	85% {
-		background: black;
-	}
-	90% {
-		background: red;
-	}
-	95% {
-		background: darkred;
-	}
-	100% {
-		background: black;
-	}
-} */
-
-/* **********************************************
-Basic layout.
-	Place the video in the center of the page.
-*********************************************  */
