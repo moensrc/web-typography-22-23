@@ -84,6 +84,13 @@ iframe {
 	text-align: center;
 }
 
+.voice4 {
+	font-family: "Brenner Slab";
+	font-style: normal;
+	font-weight: 200;
+	font-size: 20px;
+}
+
 /* When scene is dark, textcolor is white */
 .p1.voice2, 
 .p3.voice2, 
@@ -541,8 +548,8 @@ section#overlay:before{
 	background: url(../fractal.png);
 	background-size: 100%;
 
-	opacity: .1;
-	mix-blend-mode: hard-light;
+	opacity: .2;
+	mix-blend-mode: hard-light multiply;
 }
 
 /* Stacking increasingly annoying animations with animation delays */
@@ -553,12 +560,12 @@ body.sound9 section#overlay {
 	animation: sound-9-glitch1 1s 10 2s,
 	sound-9-glitch2 .7s 18 12s,
 	sound-9-glitch3 .5s 16 24.6s,
-	sound-9-glitch4 .3s 29 32.6s,
-	increase-opacity 41.9s ease-out 1;
+	sound-9-glitch4 .3s 30 32.6s,
+	increase-opacity 41.8s ease-out 1;
 }
 
 body.sound9 #video-container {
-	animation: increase-frame-size 41.9s ease 1;
+	animation: increase-frame-size 41.8s ease 1;
 }
 
 @keyframes increase-opacity {
