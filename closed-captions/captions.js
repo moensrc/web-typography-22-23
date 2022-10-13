@@ -64,6 +64,7 @@ captions[43] = ['72.2','74.6'];
 captions[44] = ['77.1','78.7'];
 captions[45] = ['80','81.738'];
 captions[46] = ['82.2','84.3'];
+	// Thank you, sir
 captions[47] = ['85.4','87'];
 
 //end manual labour

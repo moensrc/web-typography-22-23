@@ -14,6 +14,7 @@ body {
 #video-container {
 	position: relative;
 	margin: auto;
+	transform: scale(0.6);
 }
 
 #video-mask {
@@ -309,6 +310,23 @@ iframe {
 	transition: .1s ease-out .6s;
 }
 
+.p44 {
+	transform: translateY(-4em);
+}
+
+.p44.off {
+	animation: staying-text 6.3s;
+}
+
+.p45 {
+	transform: translateY(-2em);
+}
+
+.p45.off {
+	animation: staying-text 3.1s;
+}
+
+
 /**********************/
 /*******SOUNDS*********/
 /**********************/
@@ -320,12 +338,8 @@ iframe {
 
 @keyframes sound-0-shake {
 	0% {
-		transform: scale(1);
-	}
-	10% {
 		transform: scale(0.6);
 	}
-
 	100% {
 		transform: scale(1);
 	}
@@ -333,14 +347,14 @@ iframe {
 
 /* SOUND 1 */
 .sound1 #video-container {
-	animation: siren-1-movement 1.2s;
+	animation: sound-1-movement 1.2s;
 }
 
 body.sound1  {
-	animation: siren-1-background 1.2s;
+	animation: sound-1-background 1.2s;
 }
 
-@keyframes siren-1-movement {
+@keyframes sound-1-movement {
 	0% {
 		transform: scale(1) rotate(0);
 	}
@@ -370,7 +384,7 @@ body.sound1  {
 	}
 }
 
-@keyframes siren-1-background {
+@keyframes sound-1-background {
 	0% {
 		background-color: black;
 	}
@@ -532,8 +546,7 @@ body section#overlay {
 
 	background: url(../fractal.png);
 	background-size: 100%;
-
-	/* mix-blend-mode: hard-light; */
+	mix-blend-mode: hard-light multiply;
 }
 
 /* Duplicate of image in before pseudoelement for glitch animation */
@@ -549,7 +562,6 @@ section#overlay:before{
 	background-size: 100%;
 
 	opacity: .2;
-	mix-blend-mode: hard-light multiply;
 }
 
 /* Stacking increasingly annoying animations with animation delays */
