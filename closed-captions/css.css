@@ -333,10 +333,10 @@ iframe {
 
 /* SOUND 0 */
 .sound0 #video-container {
-	animation: sound-0-shake 1s forwards ease-in-out;
+	animation: sound-0-scale 1s ease-in-out forwards;
 }
 
-@keyframes sound-0-shake {
+@keyframes sound-0-scale {
 	0% {
 		transform: scale(0.6);
 	}
@@ -347,7 +347,7 @@ iframe {
 
 /* SOUND 1 */
 .sound1 #video-container {
-	animation: sound-1-movement 1.2s forwards;
+	animation: sound-1-movement 1.2s ease forwards;
 }
 
 body.sound1  {
@@ -750,10 +750,18 @@ body.sound9 #video-container {
 	}
 }
 
-body.sound2 {
-	transform: scale(1);
-	transition: .5s ease-out;
+body.sound10 {
+	animation: sound-10-scale 1s forwards ease-in;
+	background: black;
+	overflow: hidden;
 }
 
-
+@keyframes sound-10-scale {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.6);
+	}
+}
 
