@@ -89,7 +89,7 @@ iframe {
 	font-family: "Brenner Slab";
 	font-style: normal;
 	font-weight: 200;
-	font-size: 20px;
+	font-size: 28px;
 }
 
 /* When scene is dark, textcolor is white */
@@ -347,7 +347,7 @@ iframe {
 
 /* SOUND 1 */
 .sound1 #video-container {
-	animation: sound-1-movement 1.2s;
+	animation: sound-1-movement 1.2s forwards;
 }
 
 body.sound1  {
@@ -748,6 +748,11 @@ body.sound9 #video-container {
 		background-position: 0 0;
 		filter:hue-rotate(360deg);
 	}
+}
+
+body.sound2 {
+	transform: scale(1);
+	transition: .5s ease-out;
 }
 
 
