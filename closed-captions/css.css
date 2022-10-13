@@ -523,10 +523,10 @@ body section#overlay {
 	width: 100vw;
 	height: 100vh;
 
-	background: url(../noise.jpg);
+	background: url(../fractal.png);
 	background-size: 100%;
 
-	mix-blend-mode: hard-light;
+	/* mix-blend-mode: hard-light; */
 }
 
 /* Duplicate of image in before pseudoelement for glitch animation */
@@ -538,10 +538,10 @@ section#overlay:before{
 	width: 100%;
 	height: 100%;
 
-	background: url(../noise.jpg);
+	background: url(../fractal.png);
 	background-size: 100%;
 
-	opacity: .5;
+	opacity: .1;
 	mix-blend-mode: hard-light;
 }
 
@@ -553,12 +553,12 @@ body.sound9 section#overlay {
 	animation: sound-9-glitch1 1s 10 2s,
 	sound-9-glitch2 .7s 18 12s,
 	sound-9-glitch3 .5s 16 24.6s,
-	sound-9-glitch4 .3s 22 32.6s,
-	increase-opacity 40s ease-out 1;
+	sound-9-glitch4 .3s 29 32.6s,
+	increase-opacity 41.9s ease-out 1;
 }
 
 body.sound9 #video-container {
-	animation: increase-frame-size 40s ease 1;
+	animation: increase-frame-size 41.9s ease 1;
 }
 
 @keyframes increase-opacity {
@@ -566,7 +566,7 @@ body.sound9 #video-container {
 		opacity: 0;
 	}
 	100% {
-		opacity: .6;
+		opacity: .3;
 	}
 }
 
