@@ -70,11 +70,11 @@ Verder heb ik tweaks gedaan aan:
 ### Sound animatie/visualisatie 3.0
 ***Sound 9*** Sound 9 is de aanhoudende pieptoon in de test scene. Dit geluid is vervelend en scherp. Deze pieptoon wordt steeds luider: het is overheersend en valt je oren lastig. Om dit voor Doven even irritant te maken, heb ik met animaties verschillende visualisaties uitgeprobeerd. Bijvoorbeeld het laten flashen van verschillende background-colors die steeds sneller flikkeren (Zie afbeeldingen). Dit vondt ik echter nog te subtiel en niet vervelend genoeg.
 
-<img src="./images/sound9-test.png" alt="Code voor Sound9 animatie test 1" width="32%"> <img src="./images/sound9-test2.png" alt="Code voor Sound9 animatie test 2" width="32%">
+<img src="./images.readme/sound9-test.png" alt="Code voor Sound9 animatie test 1" width="32%"> <img src="./images.readme/sound9-test2.png" alt="Code voor Sound9 animatie test 2" width="32%">
 
 De volgende test was geïnspireerd door een [Codepen](https://codepen.io/web_designer_sanchit/pen/aaVPzq) die ik had gevonden. Deze maakt gebruik van een image overlay om zo een _glitch effect_ te creëeren. Dit kan je subtiel weergeven, maar met mate dit met snelheid wordt afgespeeld is het behoorlijk irritant. Hiervoor heb ik meerdere overlay afbeeldingen getest nadat de animatie in elkaar gebouwd was. 
 
-<img src="./gifs/sound9-texture.gif" alt="Clip with texture overlay 1" width="31%"> <img src="./gifs/sound9-texture2.gif" alt="Clip with texture overlay 2" width="31%"> <img src="./gifs/sound9-texture3.gif" alt="Clip with texture overlay 3" width="31%">
+<img src="./gifs.readme/sound9-texture.gif" alt="Clip with texture overlay 1" width="31%"> <img src="./gifs.readme/sound9-texture2.gif" alt="Clip with texture overlay 2" width="31%"> <img src="./gifs.readme/sound9-texture3.gif" alt="Clip with texture overlay 3" width="31%">
 
 ### Repeating text ("Within cells interlinked") 2.0
 #### Feedback (12/10)
@@ -96,3 +96,10 @@ Door geluiden en het gebrek aan geluiden heb ik op verschillende plekken in het 
 ### Adding Nonsense & Decoration
 Ik wilde mij meer verdiepen in hoe ik meer ornamentatie en 'nonsense' toe kan voegen aan dit fragment. Ik wil graag de look & feel zo behouden maar daardoor kunnen externe elementen juist nog meer opvallen.
 Ik heb voor dit onderwerp specifiek onderzoek gedaan naar tekst decoraties en toevoegingen in CSS. Ook heb ik geprobeerd met illustraties te werken. 
+
+***Lines & Grid*** 
+Een trend in design is het laten zien van hulplijnen en grids, wat ik heb geprobeerd na te bootsen in een basis. Al snel concludeerde ik dat het niet goed paste bij de video en bovendien in de weg zit.
+<img src="./images.readme/test-lines.png" alt="Test met lijnen/borders om videocontainer" width="66%"> <img src="./images.readme/test-lines-code.png" alt="Code van test met borders" width="32%">
+
+
+
