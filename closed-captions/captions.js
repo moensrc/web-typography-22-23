@@ -98,7 +98,7 @@ captions[67] = ['115.02','115.56'];
 captions[68] = ['115.56','116.26'];
 captions[69] = ['116.26','117.4'];
 captions[70] = ['117.4','118.44'];
-// Withing one stem
+// Within one stem
 captions[71] = ['118.44','120'];
 captions[72] = ['120.46','121.28'];
 captions[73] = ['121.4','122.66'];
