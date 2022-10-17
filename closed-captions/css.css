@@ -11,6 +11,36 @@ body {
 	background-color: black;
 }
 
+h1 {
+	position: absolute;
+	top: 2em;
+	left: 50%;
+	margin-left: -202.8px;
+
+	color: black;
+	font-family: "Brenner Mono";
+	font-style: Italic;
+	font-weight: 800;
+	font-size: 3em;	
+	transition: .3s ease 1s;
+}
+
+/* Inspired by https://codepen.io/prathkum/pen/dyMPErw */
+h1:before {
+	content: "Baseline Test";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+	background-image: repeating-linear-gradient(45deg, transparent 0, transparent 2px, white 2px, white 4px);
+	/* -webkit-background-clip: text;
+	background-clip: text; */
+	color: transparent;
+	transition: .3s ease 1s;
+}
+
+
 #video-container:before {
 	content: "";
 	position: absolute;
@@ -150,6 +180,12 @@ ul, li {
 	100% {
 		opacity: 0;
 	}
+}
+
+/* H1 disappears behind the video when sound0 starts.*/
+body.sound0 h1,
+body.sound0 h1:before {
+	opacity: 0;
 }
 
 .p0 span {
