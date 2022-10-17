@@ -13,20 +13,20 @@ body {
 
 #video-container:before {
 	content: "";
-	height: 100px;
-	width: 80vw;
 	position: absolute;
-	margin-top: -108px;
-	margin-left: -4px;
-	border: 4px solid white;
+	height: 69vh;
+	width: 80vw;
+	background-image: url(../images/2049.1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0;
+	pointer-events: none;
 }
 
 #video-container {
 	position: relative;
 	margin: auto;
 	transform: scale(0.6);
-
-	border: 4px solid white;
 }
 
 #video-mask {
@@ -41,6 +41,26 @@ iframe {
 	width: 80vw;
 	height: 53.33333333vw;
 	margin-top: -0.35vw;
+}
+
+/* Illustrations for background */
+ul, li {
+	margin: 0;
+	list-style-type: none;
+}
+
+#illustrations {
+	pointer-events: none;
+	position: absolute;
+	display: grid;
+	grid-template-columns: 45vw 45vw;
+	column-gap: 50px;
+	row-gap: 100px;
+	grid-row: auto auto;
+}
+
+#illustrations li img {
+	width: 45vw;
 }
 
 /* Basic p mechanics */
@@ -344,6 +364,10 @@ iframe {
 /**********************/
 
 /* SOUND 0 */
+body.sound0 #illustrations {
+	z-index: -1;
+}
+
 .sound0 #video-container {
 	animation: sound-0-scale 1s ease-in-out forwards;
 }
@@ -433,6 +457,10 @@ body.sound1  {
 
 /* SOUND 3,5,7 & 4,6,8 */
 /* Inspired by codepen: https://codepen.io/P1N2O/pen/pyBNzX */
+body.sound3 #illustrations li {
+	opacity: 0;
+}
+
 body.sound3 {
 	background: linear-gradient(-45deg, greenyellow, black);
 	animation: sound-3-gradient 1.5s ease-in forwards;
@@ -556,7 +584,7 @@ body section#overlay {
 	width: 100vw;
 	height: 100vh;
 
-	background: url(../fractal.png);
+	background: url(../images/fractal.png);
 	background-size: 100%;
 	mix-blend-mode: hard-light multiply;
 }
@@ -570,7 +598,7 @@ section#overlay:before{
 	width: 100%;
 	height: 100%;
 
-	background: url(../fractal.png);
+	background: url(../images/fractal.png);
 	background-size: 100%;
 
 	opacity: .2;
@@ -590,6 +618,58 @@ body.sound9 section#overlay {
 
 body.sound9 #video-container {
 	animation: increase-frame-size 41.8s ease 1;
+}
+
+body.sound9 #illustrations {
+	z-index: 2;
+	display: block;
+}
+
+body.sound9 #illustrations li {
+	position: absolute;
+}
+
+body.sound9 #illustrations li img {
+	width: 95vw;
+	margin-top: 100px;
+}
+
+body.soung9 #illustrations li:nth-of-type(3) img {
+	width: 400px;
+	margin-left: 100px;
+}
+
+body.sound9 #illustrations li:nth-of-type(1) {
+	animation: show-image 1s 1 22s forwards,
+	remove-image 1s 1 37s forwards;
+}
+
+body.sound9 #illustrations li:nth-of-type(2) {
+	animation: show-image 1s 1 38s forwards,
+	remove-image 1s 1 41s forwards;
+}
+
+body.sound9 #illustrations li:nth-of-type(3) {
+	animation: show-image 1s 1 44s forwards,
+	remove-image 1s 1 51s forwards;
+}
+
+@keyframes show-image {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes remove-image {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 @keyframes increase-opacity {
@@ -762,6 +842,7 @@ body.sound9 #video-container {
 	}
 }
 
+/* SOUND 10 */
 body.sound10 {
 	animation: sound-10-scale 1s forwards ease-in;
 	background: black;
@@ -776,4 +857,3 @@ body.sound10 {
 		transform: scale(1.6);
 	}
 }
-
