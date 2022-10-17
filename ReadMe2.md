@@ -80,3 +80,19 @@ De volgende test was geïnspireerd door een [Codepen](https://codepen.io/web_des
 #### Feedback (12/10)
 Tijdens het voortgangsgesprek duidde Vasilis erop dat de laatste zin geschreeuwd lijkt te worden door het formaat in contrast met de rest. Het is namelijk zo dat deze tekst over de hele video wordt weergegeven. Dat wilde ik graag aanpassen zodat het niet verwarrend is voor deze doelgroep. Ik wilde wel belang geven aan deze zin omdat dit het einde is van de test, maar het niet groot en schreeuwend weergeven.
 Ik heb dit opgelost door deze zin onder in het scherm te zetten en een groene kleur te geven.
+
+## Dag 4 (13/10/2022)
+### Personaliteit in voice 4
+Voice 4 heeft een kleine toevoeging aan het fragment. Hij verteld K dat hij zijn bonus op kan halen. De stem van Voice4 is neutraal en bijna vriendelijk. Ik wilde dit visualiseren door een andere variatie van Brenner te gebruiken: Brenner Slab. Door de slabs is het nog wel robot-achtig en monotoon, maar heeft het meer persoonlijkheid. Het oogt vriendelijk en neutraal. 
+
+### Scaling variaties in scenes
+Door geluiden en het gebrek aan geluiden heb ik op verschillende plekken in het fragment gespeeld met scaling van de video-container. Hier moest ik veel aan tweaken, omdat bepaalde animaties wel/niet een forwards property hadden op de animation-fill-mode. 
+* Aan het begin van het fragment (sound0) schaalt het scherm op door het toenemende geluid.
+* De video schaalt vervolgens weer langzaam op tijdens het aanhoudende piepgeluid in de 'Cells'-scene.
+* De video schaalt direct af nadat de 'Cells'-scene voorbij is en de pieptoon stopt.
+* De video schaalt op nadat het fragment voor de tweede baseline test begint.
+
+## Dag 5 (17/10/2022)
+### Adding Nonsense & Decoration
+Ik wilde mij meer verdiepen in hoe ik meer ornamentatie en 'nonsense' toe kan voegen aan dit fragment. Ik wil graag de look & feel zo behouden maar daardoor kunnen externe elementen juist nog meer opvallen.
+Ik heb voor dit onderwerp specifiek onderzoek gedaan naar tekst decoraties en toevoegingen in CSS. Ook heb ik geprobeerd met illustraties te werken. 
