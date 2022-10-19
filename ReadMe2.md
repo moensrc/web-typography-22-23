@@ -132,7 +132,7 @@ Om meer impressie te geven van het fragment zelf op de landingspage voordat de v
 Tijdens research over css text effects kwam ik de text-emphasis property tegen. Dit leek me een perfecte toepassing om nadruk te leggen op elementen zonder deze visueel te veranderen door bijvoorbeeld de font-size te vergroten of de typografie schuin of bold te zetten. Het gevolg van tekst vergroten of bold/italic toevoegen is dat dit een andere emotie of toon over kan brengen.
 Aangezien de dialoog (in vooral het eerste fragment) erg monotoon is, leek mij dit geschikt om toe te voegen als nuttig- én nonsense element.
 
-<img src="./images.readme/emphasis1.png" alt="The Word 'ready' is emphasized with filled double circles over it" width="75%"> <img src="./images.readme/emphasis2.png" alt="The Word 'cells' is emphasized with open dots over it" width="24%">
+<img src="./images.readme/emphasis1.png" alt="The Word 'ready' is emphasized with filled double circles over it" width="83%"> <img src="./images.readme/emphasis2.png" alt="The Word 'cells' is emphasized with open dots over it" width="16%">
 <img src="./images.readme/emphasis3.png" alt="'Within cells interlinked' is emphasized with cells having filled dots over it" width="99%">
 
 ***GIF Animation*** <br>
