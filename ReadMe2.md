@@ -108,7 +108,7 @@ Een trend in design is het laten zien van hulplijnen en grids, wat ik heb geprob
 Ik heb een paar screencaps van het filmfragment met witte lijn overgetrokken met Procreate. Ik heb een paar testen gedaan met overlap en positionering tijdens verschillende states.
 
 <img src="./images.readme/test-illustration-code1.png" alt="Test positionering van Illustraties code" width="65%"> <img src="./images.readme/test-illustration-code.png" alt="Test positionering van Illustraties code 2" width="34%">
-<img src="./images.readme/test-illustration-code2.png" alt="Test positionering van Illustraties code 2" width="35%"> <img src="./images.readme/test-illustration2.png" alt="Test positionering van Illustraties" width="64%">
+<img src="./images.readme/test-illustration-code2.png" alt="Test positionering van Illustraties code 2" width="25%"> <img src="./images.readme/test-illustration2.png" alt="Test positionering van Illustraties" width="74%">
 
 Illustraties worden weergegeven aan het begin van het fragment, totdat sound1 afspeelt. Illustraties verschijnen tijdens de 'Cells'-scene en blijven staan op fullscreen tot de volgende.
 
