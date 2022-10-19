@@ -107,8 +107,8 @@ Een trend in design is het laten zien van hulplijnen en grids, wat ik heb geprob
 ***Illustraties*** 
 Ik heb een paar screencaps van het filmfragment met witte lijn overgetrokken met Procreate. Ik heb een paar testen gedaan met overlap en positionering tijdens verschillende states.
 
-<img src="./images.readme/test-illustration-code1.png" alt="Test positionering van Illustraties code" width="65%"> <img src="./images.readme/test-illustration-code.png" alt="Test positionering van Illustraties code 2" width="35%">
-<img src="./images.readme/test-illustration-code2.png" alt="Test positionering van Illustraties code 2" width="35%"> <img src="./images.readme/test-illustration2.png" alt="Test positionering van Illustraties" width="65%">
+<img src="./images.readme/test-illustration-code1.png" alt="Test positionering van Illustraties code" width="65%"> <img src="./images.readme/test-illustration-code.png" alt="Test positionering van Illustraties code 2" width="34%">
+<img src="./images.readme/test-illustration-code2.png" alt="Test positionering van Illustraties code 2" width="35%"> <img src="./images.readme/test-illustration2.png" alt="Test positionering van Illustraties" width="64%">
 
 Illustraties worden weergegeven aan het begin van het fragment, totdat sound1 afspeelt. Illustraties verschijnen tijdens de 'Cells'-scene en blijven staan op fullscreen tot de volgende.
 
@@ -116,7 +116,7 @@ Illustraties worden weergegeven aan het begin van het fragment, totdat sound1 af
 ***Title of clip: Baseline Test*** 
 Om meer impressie te geven van het fragment zelf op de landingspage voordat de video wordt afgespeeld, wilde ik de titel weergeven. Met inspiratie van een codepen die ik had gevonden had ik gespeeld met lijnen. Toen het niet gelijk werkte met de lijnen in de clippath van de tekst, vond ik dat eigenlijk visueel aantrekkelijker.
 
-<img src="./images.readme/title-baselinetest-test.png" alt="Test voor Titel" width="50%"> <img src="./images.readme/title-baselinetest-test2.png" alt="Test voor Titel 2" width="50%">
+<img src="./images.readme/title-baselinetest-test.png" alt="Test voor Titel" width="49%"> <img src="./images.readme/title-baselinetest-test2.png" alt="Test voor Titel 2" width="49%">
 <img src="./images.readme/title-finish.png" alt="Titel na testen" width="100%">
 
 ## Dag 6 (19/10/2022)
