@@ -101,14 +101,14 @@ Ik heb voor dit onderwerp specifiek onderzoek gedaan naar tekst decoraties en to
 ***Lines & Grid*** 
 Een trend in design is het laten zien van hulplijnen en grids, wat ik heb geprobeerd na te bootsen in een basis. Al snel concludeerde ik dat het niet goed paste bij de video en bovendien in de weg zit.
 
-<img src="./images.readme/test-lines.png" alt="Test met lijnen/borders om videocontainer" width="55%"><img src="./images.readme/test-lines-code.png" alt="Code van test met borders" width="44%">
+<img src="./images.readme/test-lines.png" alt="Test met lijnen/borders om videocontainer" width="65%"><img src="./images.readme/test-lines-code.png" alt="Code van test met borders" width="34%">
 
 
 ***Illustraties*** 
 Ik heb een paar screencaps van het filmfragment met witte lijn overgetrokken met Procreate. Ik heb een paar testen gedaan met overlap en positionering tijdens verschillende states.
 
-<img src="./images.readme/test-illustration-code1.png" alt="Test positionering van Illustraties code" width="65%"> <img src="./images.readme/test-illustration-code.png" alt="Test positionering van Illustraties code 2" width="34%">
-<img src="./images.readme/test-illustration-code2.png" alt="Test positionering van Illustraties code 2" width="25%"> <img src="./images.readme/test-illustration2.png" alt="Test positionering van Illustraties" width="74%">
+<img src="./images.readme/test-illustration-code1.png" alt="Test positionering van Illustraties code" width="70%"> <img src="./images.readme/test-illustration-code.png" alt="Test positionering van Illustraties code 2" width="29%">
+<img src="./images.readme/test-illustration-code2.png" alt="Test positionering van Illustraties code 2" width="30%"> <img src="./images.readme/test-illustration2.png" alt="Test positionering van Illustraties" width="69%">
 
 Illustraties worden weergegeven aan het begin van het fragment, totdat sound1 afspeelt. Illustraties verschijnen tijdens de 'Cells'-scene en blijven staan op fullscreen tot de volgende.
 
@@ -117,7 +117,7 @@ Illustraties worden weergegeven aan het begin van het fragment, totdat sound1 af
 Om meer impressie te geven van het fragment zelf op de landingspage voordat de video wordt afgespeeld, wilde ik de titel weergeven. Met inspiratie van een codepen die ik had gevonden had ik gespeeld met lijnen. Toen het niet gelijk werkte met de lijnen in de clippath van de tekst, vond ik dat eigenlijk visueel aantrekkelijker.
 
 <img src="./images.readme/title-baselinetest-test.png" alt="Test voor Titel" width="49%"> <img src="./images.readme/title-baselinetest-test2.png" alt="Test voor Titel 2" width="49%">
-<img src="./images.readme/title-finish.png" alt="Titel na testen" width="100%">
+<img src="./images.readme/title-finish.png" alt="Titel na testen" width="99%">
 
 ## Dag 6 (19/10/2022)
 ### Adding More Nonsense
