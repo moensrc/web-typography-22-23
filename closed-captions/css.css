@@ -41,7 +41,7 @@ h1:before {
 }
 
 
-#video-container:before {
+/* #video-container:before {
 	content: "";
 	position: absolute;
 	height: 69vh;
@@ -51,7 +51,7 @@ h1:before {
 	background-repeat: no-repeat;
 	opacity: 0;
 	pointer-events: none;
-}
+} */
 
 #video-container {
 	position: relative;
@@ -257,6 +257,14 @@ body.sound0 h1:before {
 	transition: 0s 3s;
 }
 
+.p0.on span:nth-of-type(11) {
+	text-emphasis: filled double-circle greenyellow;
+}
+
+.p2.on span:nth-of-type(3) {
+	text-emphasis: "_" greenyellow;
+}
+
 .p6 span:nth-of-type(3) {
 	font-weight: 800;
 }
@@ -276,6 +284,7 @@ body.sound0 h1:before {
 .p38 {
 	transform: translateY(-5em);
 	font-size: 2.5em;
+	text-emphasis: open circle greenyellow;
 }
 
 /* Textlines from voice1 that need emphasis in cells-scene */
@@ -356,7 +365,9 @@ body.sound0 h1:before {
 
 	/* text-align: center; */
 	font-size: 30px;
-	color: greenyellow;
+	color: red;
+	/* -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black; */
 }
 
 
@@ -373,6 +384,7 @@ body.sound0 h1:before {
 .p43.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: .1s ease-out .4s;
+	text-emphasis: filled circle red;
 }
 
 .p43.on span:nth-of-type(3) {
@@ -612,6 +624,7 @@ body.sound8 {
 		background-color: black;
 	}
 }
+
 
 /* SOUND 9 */
 /* Animation inspired by https://codepen.io/web_designer_sanchit/pen/aaVPzq */
@@ -896,3 +909,4 @@ body.sound10 {
 		transform: scale(1.6);
 	}
 }
+
