@@ -9,6 +9,15 @@ body {
 	margin: 0;
 
 	background-color: black;
+	background: url(../images/rain-red.gif);
+	background-repeat: no-repeat;
+	background-size: 100vw;
+}
+
+h1,
+p,
+img {
+	pointer-events: none;
 }
 
 h1 {
@@ -382,6 +391,8 @@ body.sound0 h1:before {
 }
 
 .p43.on span:nth-of-type(2) {
+	font-family: "Brenner Mono";
+	font-weight: 400;
 	opacity: 1;
 	transition: .1s ease-out .4s;
 	text-emphasis: filled circle red;
