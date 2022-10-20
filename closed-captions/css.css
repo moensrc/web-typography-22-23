@@ -49,7 +49,6 @@ h1:before {
 	transition: .3s ease 1s;
 }
 
-
 /* #video-container:before {
 	content: "";
 	position: absolute;
@@ -189,12 +188,6 @@ ul, li {
 	100% {
 		opacity: 0;
 	}
-}
-
-/* H1 disappears behind the video when sound0 starts.*/
-body.sound0 h1,
-body.sound0 h1:before {
-	opacity: 0;
 }
 
 .p0 span {
@@ -425,6 +418,13 @@ body.sound0 h1:before {
 /**********************/
 
 /* SOUND 0 */
+/* H1 disappears behind the video when sound0 starts.*/
+body.sound0 h1,
+body.sound0 h1:before {
+	opacity: 0;
+}
+
+/* Puts illustrations behind video container */
 body.sound0 #illustrations {
 	z-index: -1;
 }
@@ -448,7 +448,7 @@ body.sound0 #illustrations {
 }
 
 body.sound1  {
-	animation: sound-1-background 1.2s;
+	animation: sound-1-background 1.2s forwards;
 }
 
 @keyframes sound-1-movement {
@@ -483,31 +483,31 @@ body.sound1  {
 
 @keyframes sound-1-background {
 	0% {
-		background-color: black;
+		background: black;
 	}
 	10% {
-		background-color: darkred;	
+		background: darkred;	
 	}
 	20% {
-		background-color: red;	
+		background: red;	
 	}
 	30% {
-		background-color: darkred;	
+		background: darkred;	
 	}
 	40% {
-		background-color: red;	
+		background: red;	
 	}
 	50% {
-		background-color: darkred;
+		background: darkred;
 	}
 	60% {
-		background-color: red;	
+		background: red;	
 	}
 	80% {
-		background-color: darkred;
+		background: darkred;
 	}
 	100% {
-		background-color: black;
+		background: black;
 	}
 }
 
