@@ -67,46 +67,50 @@ captions[46] = ['82.2','84.3'];
 	// Thank you, sir
 captions[47] = ['85.4','87'];
 
-//end manual labour
+	// Cells cells
 captions[48] = ['87.68','88.18'];
 captions[49] = ['88.38','88.88'];
-// Have you ever been in an institution. Cells
+	// Have you ever been in an institution. Cells
 captions[50] = ['88.88','91.24'];
 captions[51] = ['91.34','91.84'];
-captions[52] = ['91.98','95.52'];
-// -Cells
+captions[52] = ['91.98','95.52']; // duties
 captions[53] = ['95.52','96.02'];
+	// Interlinked
 captions[54] = ['96.12','100.2'];
 captions[55] = ['100.3','102.4'];
-// -Interlinked
+	// -Interlinked
 captions[56] = ['102.64','103.3'];
 captions[57] = ['103.3','104.38'];
 captions[58] = ['104.54','105.42'];
-// Dreadfully
+	// Dreadfully x2
 captions[59] = ['105.42','105.92'];
 captions[60] = ['106','106.5'];
+	// Dreadfully
 captions[61] = ['106.64','109.28'];
-// -Dreadfully
 captions[62] = ['109.28','109.8'];
+	// Distinct
 captions[63] = ['109.8','112.4'];
 captions[64] = ['112.4','113'];
-// Dreadfully distinct
+	// Dreadfully distinct
 captions[65] = ['113','114.06'];
 captions[66] = ['114.12','114.98'];
+	// Dark x2
 captions[67] = ['115.02','115.56'];
-// -Dark
 captions[68] = ['115.56','116.26'];
+	// Within cells interlinked x2
 captions[69] = ['116.26','117.4'];
 captions[70] = ['117.4','118.44'];
-// Within one stem
+	// Within one stem x2
 captions[71] = ['118.44','120'];
 captions[72] = ['120.46','121.28'];
+	// And dreadfully distinct x2
 captions[73] = ['121.4','122.66'];
-// -And dreadfully distinct
 captions[74] = ['122.66','123.86'];
+	// Against the dark x2
 captions[75] = ['123.98','124.92'];
 captions[76] = ['124.92','125.52'];
-// A tall white fountain played
+	// A tall white fountain played x2
 captions[77] = ['125.52','127.28'];
 captions[78] = ['128.18','130.14'];
+	// Youre not even close to baseline
 captions[79] = ['132.58','135'];
