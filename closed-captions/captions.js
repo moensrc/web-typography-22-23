@@ -78,8 +78,8 @@ captions[53] = ['95.52','96.02'];
 	// Interlinked
 captions[54] = ['96.12','100.2'];
 captions[55] = ['100.3','102.4'];
-	// -Interlinked
 captions[56] = ['102.64','103.3'];
+	// Within cells interlinked x2
 captions[57] = ['103.3','104.38'];
 captions[58] = ['104.54','105.42'];
 	// Dreadfully x2
