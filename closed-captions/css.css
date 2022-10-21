@@ -164,6 +164,13 @@ ul, li {
 	background-color: white;
 }
 
+.error {
+	font-family: "Brenner Mono";
+	font-weight: 300;
+	color: red;
+	background-color: black;
+}
+
 /* When scene is dark, textcolor is white */
 .p1.voice2, 
 .p3.voice2, 
@@ -283,10 +290,48 @@ ul, li {
 .p30,
 .p33,
 .p36,
-.p38 {
+.p38,
+.p48,
+.p50 span:nth-of-type(8),
+.p52 span:nth-of-type(15),
+.p55,
+.p57,
+.p59,
+.p61 span:nth-of-type(9),
+.p63 span:nth-of-type(9),
+.p65,
+.p67,
+.p69,
+.p71,
+.p73,
+.p75,
+.p77 {
 	transform: translateY(-5em);
 	font-size: 2.5em;
 	text-emphasis: open circle greenyellow;
+}
+
+.p50,
+.p52,
+.p61,
+.p63 {
+	height: 1.5em;
+}
+
+.p50 span:nth-of-type(8),
+.p52 span:nth-of-type(15),
+.p61 span:nth-of-type(9),
+.p63 span:nth-of-type(9) {
+	display: block;
+	background-color: black;
+	width: min-content;
+}
+
+
+.p79 {
+	transform: translateY(-5em);
+	font-size: 2em;
+	text-emphasis: filled triangle greenyellow;
 }
 
 /* Textlines from voice1 that need emphasis in cells-scene */
@@ -329,7 +374,7 @@ ul, li {
 	transition: 0s 0.3s;
 }
 
-/* Questions in baseline test */
+/* Change width of Questions in baseline test */
 .p10,
 .p13,
 .p16,
@@ -343,6 +388,7 @@ ul, li {
 	width: 400px;
 	word-break: break-word;
 }
+
 
 /* Repeating line x3 "Within cells interlinked" */
 .p41.on,
@@ -371,7 +417,6 @@ ul, li {
 	/* -webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black; */
 }
-
 
 .p43 span {
 	opacity: 0;
