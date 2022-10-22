@@ -202,6 +202,18 @@ ul, li {
 	}
 }
 
+@keyframes show-text {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .p0 span {
 	opacity: 0;
 }
@@ -323,13 +335,28 @@ ul, li {
 	height: 1.5em;
 }
 
+/* Seperate last words in sentences for emphasis */
 .p50 span:nth-of-type(8),
 .p52 span:nth-of-type(15),
 .p61 span:nth-of-type(9),
 .p63 span:nth-of-type(9) {
+	margin: .5em;
+	font-size: 2em;
 	display: block;
 	background-color: black;
 	width: min-content;
+
+	opacity: 0;
+	transform: translateY(-7.5em);
+}
+
+.p50.on span:nth-of-type(8),
+.p52.on span:nth-of-type(15),
+.p61.on span:nth-of-type(9),
+.p63.on span:nth-of-type(9) {
+	/* animation: show-text 1s 1s; */
+	opacity: 1;
+	transition: .2s 1.2s;
 }
 
 
@@ -351,8 +378,26 @@ ul, li {
 .p30.off,
 .p33.off,
 .p36.off,
-.p38.off {
+.p38.off, 
+.p48.off,
+.p50.off,
+.p52.off,
+.p55.off,
+.p57.off,
+.p59.off,
+.p61.off,
+.p63.off,
+.p65.off,
+.p67.off,
+.p69.off,
+.p71.off,
+.p73.off,
+.p75.off {
 	animation: staying-text 1.02s ease;
+}
+
+.p77.off {
+	animation: staying-text 2s ease;
 }
 
 /* Textlines from voice2 that need emphasis in cells-scene */
@@ -367,7 +412,22 @@ ul, li {
 .p31,
 .p34,
 .p37,
-.p39 {
+.p39,
+.p49,
+.p51,
+.p53,
+.p56,
+.p58,
+.p60,
+.p62,
+.p64,
+.p66,
+.p68,
+.p70,
+.p72,
+.p74,
+.p76,
+.p78 {
 	right: unset;
 	left: 0;
 	font-size: 2.5em;
@@ -776,7 +836,7 @@ body.sound9 #illustrations li:nth-of-type(3) {
 	animation: show-image 1s 1 44s forwards,
 	remove-image 1s 1 51.1s forwards;
 }
-
+ 
 @keyframes show-image {
 	0% {
 		opacity: 0;
