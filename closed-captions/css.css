@@ -462,6 +462,16 @@ ul, li {
 	animation: staying-text 3.1s;
 }
 
+/* End screen text appears 1 by 1 */
+#closed-captions p.error span:first-of-type,
+#closed-captions p.error span:nth-of-type(2) {
+	font-weight: 800;
+	text-transform: uppercase;
+	text-emphasis: "⊘" red;
+}
+
+
+
 
 /**********************/
 /*******SOUNDS*********/
