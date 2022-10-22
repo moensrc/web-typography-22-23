@@ -164,11 +164,16 @@ ul, li {
 	background-color: white;
 }
 
-.error {
+#closed-captions p.error {
 	font-family: "Brenner Mono";
+	font-size: 28px;
 	font-weight: 300;
 	color: red;
 	background-color: black;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 18em;
 }
 
 /* When scene is dark, textcolor is white */
