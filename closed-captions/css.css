@@ -823,21 +823,21 @@ body.sound9 #illustrations li:nth-of-type(3) img {
 }
 
 body.sound9 #illustrations li:nth-of-type(1) {
-	animation: show-image 1s 1 22s forwards,
-	remove-image 1s 1 37s forwards;
+	animation: show-sound9-image 1s 1 22s forwards,
+	remove-sound9-image 1s 1 37s forwards;
 }
 
 body.sound9 #illustrations li:nth-of-type(2) {
-	animation: show-image 1s 1 38s forwards,
-	remove-image 1s 1 41s forwards;
+	animation: show-sound9-image 1s 1 38s forwards,
+	remove-sound9-image 1s 1 41s forwards;
 }
 
 body.sound9 #illustrations li:nth-of-type(3) {
-	animation: show-image 1s 1 44s forwards,
-	remove-image 1s 1 51.1s forwards;
+	animation: show-sound9-image 1s 1 44s forwards,
+	remove-sound9-image 1s 1 51.1s forwards;
 }
  
-@keyframes show-image {
+@keyframes show-sound9-image {
 	0% {
 		opacity: 0;
 	}
@@ -846,7 +846,7 @@ body.sound9 #illustrations li:nth-of-type(3) {
 	}
 }
 
-@keyframes remove-image {
+@keyframes remove-sound9-image {
 	0% {
 		opacity: 1;
 	}
@@ -1040,4 +1040,51 @@ body.sound10 {
 		transform: scale(1.6);
 	}
 }
+
+body.sound10 #illustrations {
+	z-index: 2;
+	display: block;
+}
+
+body.sound10 #illustrations li {
+	position: absolute;
+}
+
+body.sound10 #illustrations li img {
+	width: 65vw;
+	margin-top: 150px;
+	margin-left: 200px;
+}
+
+body.sound10 #illustrations li:nth-of-type(4) {
+	animation: show-sound10-image 1s 1 13s forwards,
+	remove-sound10-image 1s 1 20s forwards;
+}
+
+body.sound10 #illustrations li:nth-of-type(2) {
+	animation: show-sound10-image 1s 1 38s forwards,
+	remove-sound10-image 1s 1 50s forwards;
+}
+
+@keyframes show-sound10-image {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes remove-sound10-image {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* SOUND 11 */
+
+/* SOUND 12 */
 
