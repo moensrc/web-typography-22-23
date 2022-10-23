@@ -140,5 +140,24 @@ Als overlay voor de achtergrond met illustraties wilde ik een bewegend element t
 
 <img src="./images.readme/animation-rain.gif" alt="Rain animation (13 frames)" width="99%">
 
-## Dag 7 (20/10/2022)
-### 
+
+## Dag 7 (22/10/2022)
+### End Screen
+Om het fragment af te sluiten leek het me geschikt om een soort end-screen te ontwerpen. Omdat de tester aan het eind K verteld dat hij ver van baseline zit, was een error scherm een goede 'nonsense' toevoeging aan dit scherm. Met rode letters en variatie in bold en normal font-weight staat er ook een emphasis op de error met een "⊘" teken.
+
+<img src="./images.readme/error-screen.png" alt="Error 404 Baseline not found" width="99%">
+
+### Layout Fragment 2
+Ook heb ik met de captions van fragment 2 gespeeld. Omdat de HTML anders is geformat, wilde ik graag dat de eindwoorden net als in fragment 1 nadruk geven door de afwisselende en herhalende dialoog spannender te maken en meer snelheid te geven. <br>
+Zo heb ik de laatste woorden van deze zinnen apart gestyled en met een delay gezorgd dat de persoon die deze captions leest, eerst de onderste zin leest en vervolgens pas het verschijnende laatste woord.
+
+
+### Adding Decoration 2.0
+***Illustraties*** <br>
+Ook in fragment 2 wilde ik de illustraties toevoegen, hier heb ik er twee om gebruik van te maken. Dit is zo consistent met de styling en branding van mijn eigen opvatting van het fragment en toepassing van mijn eigen visie. 
+
+<img src="./images.readme/illustrations-2.1.png" alt="Illustratie K kijkt naar voren" width="99%">
+<img src="./images.readme/illustrations-2.2.png" alt="Illustratie Camera" width="99%">
+
+## Dag 8 (24/10/2022)
+### End Screen
