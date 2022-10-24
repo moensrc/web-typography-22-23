@@ -101,6 +101,12 @@ ul, li {
 	width: 45vw;
 }
 
+#illustrations li:nth-of-type(5),
+#illustrations li:nth-of-type(6),
+#illustrations li:nth-of-type(7) {
+	display: none;
+}
+
 /* Basic p mechanics */
 #closed-captions p {
 	opacity: 0;
@@ -1126,10 +1132,10 @@ body.sound11 #video-container {
 		box-shadow: none;
 	}
 	40% {
-		box-shadow: inset 0 0 200px red;
+		box-shadow: inset 0 0 100px red;
 	}
 	99% {
-		box-shadow: inset 0 0 100px red;
+		box-shadow: inset 0 0 40px red;
 	}
 	100% {
 		box-shadow: inset 0 0 20px red;
