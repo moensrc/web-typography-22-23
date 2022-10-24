@@ -378,23 +378,10 @@ ul, li {
 .p30.off,
 .p33.off,
 .p36.off,
-.p38.off, 
-.p48.off,
-.p50.off,
-.p52.off,
-.p55.off,
-.p57.off,
-.p59.off,
-.p61.off,
-.p63.off,
-.p65.off,
-.p67.off,
-.p69.off,
-.p71.off,
-.p73.off,
-.p75.off {
+.p38.off {
 	animation: staying-text 1.02s ease;
 }
+
 
 .p77.off {
 	animation: staying-text 2s ease;
@@ -530,8 +517,33 @@ ul, li {
 	text-emphasis: "⊘" red;
 }
 
+.p48.off,
+.p50.off,
+.p52.off,
+.p55.off,
+.p57.off,
+.p59.off,
+.p61.off,
+.p63.off,
+.p65.off,
+.p67.off,
+.p69.off,
+.p71.off,
+.p73.off,
+.p75.off {
+	animation: staying-text 0.6s ease;
+}
 
-
+.p58,
+.p60,
+.p68,
+.p70,
+.p72,
+.p74,
+.p76,
+.p78 {
+	text-shadow: 0 0 3px white;
+}
 
 /**********************/
 /*******SOUNDS*********/
@@ -1050,15 +1062,20 @@ body.sound10 #illustrations li {
 	position: absolute;
 }
 
-body.sound10 #illustrations li img {
+body.sound10 #illustrations li:nth-of-type(4) img {
 	width: 65vw;
 	margin-top: 150px;
 	margin-left: 200px;
 }
 
+body.sound10 #illustrations li:nth-of-type(2) img {
+	width: 95vw;
+	margin-top: 100px;
+}
+
 body.sound10 #illustrations li:nth-of-type(4) {
 	animation: show-sound10-image 1s 1 13s forwards,
-	remove-sound10-image 1s 1 20s forwards;
+	remove-sound10-image 1s 1 16s forwards;
 }
 
 body.sound10 #illustrations li:nth-of-type(2) {
@@ -1086,5 +1103,48 @@ body.sound10 #illustrations li:nth-of-type(2) {
 
 /* SOUND 11 */
 
-/* SOUND 12 */
 
+/* SOUND 12 */
+body.sound12 {
+	animation: sound-12-background 1.5s 1 ease forwards;
+}
+
+body.sound12 #video-container {
+	transform: scale(1);
+}
+
+@keyframes sound-12-background {
+	0% {
+		background: black;
+	}
+	10% {
+		background: darkred;	
+	}
+	20% {
+		background: red;	
+	}
+	30% {
+		background: darkred;	
+	}
+	40% {
+		background: red;	
+	}
+	50% {
+		background: darkred;
+	}
+	60% {
+		background: red;	
+	}
+	80% {
+		background: darkred;
+	}
+	100% {
+		background: black;
+	}
+}
+
+
+/* SOUND 13 */
+
+
+/* SOUND 14 */
