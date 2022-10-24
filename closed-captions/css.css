@@ -1039,19 +1039,15 @@ body.sound9 #illustrations li:nth-of-type(3) {
 
 /* SOUND 10 */
 body.sound10 {
-	animation: sound-10-scale 1s forwards ease-in;
 	background: black;
 	overflow: hidden;
 }
 
-@keyframes sound-10-scale {
-	0% {
-		transform: scale(1);
-	}
-	100% {
-		transform: scale(1.6);
-	}
+body.sound10 #video-container {
+	transform: scale(1);
+	transition: 1s ease-in;
 }
+
 
 body.sound10 #illustrations {
 	z-index: 2;
@@ -1102,15 +1098,50 @@ body.sound10 #illustrations li:nth-of-type(2) {
 }
 
 /* SOUND 11 */
+body.sound11 {
+	animation: sound-11-frame 2.5s 6 ease-out;
+}
+
+body.sound11 #video-container {
+	animation: sound-11-soundwaves 10s 6 ease-out;
+}
+
+@keyframes sound-11-soundwaves {
+	0% {
+		box-shadow: 0 0 20px red;
+	}
+	40% {
+		box-shadow: 0 0 100px red;
+	}
+	99% {
+		box-shadow: 0 0 40px red;
+	}
+	100% {
+		box-shadow: 0 0 20px red;
+	}
+}
+
+@keyframes sound-11-frame {
+	0% {
+		box-shadow: none;
+	}
+	40% {
+		box-shadow: inset 0 0 200px red;
+	}
+	99% {
+		box-shadow: inset 0 0 100px red;
+	}
+	100% {
+		box-shadow: inset 0 0 20px red;
+	}
+}
+
+
 
 
 /* SOUND 12 */
 body.sound12 {
-	animation: sound-12-background 1.5s 1 ease forwards;
-}
-
-body.sound12 #video-container {
-	transform: scale(1);
+	animation: sound-12-background 1s 1 ease;
 }
 
 @keyframes sound-12-background {
@@ -1145,6 +1176,10 @@ body.sound12 #video-container {
 
 
 /* SOUND 13 */
-
+body.sound13 {
+	background: url(../images/waves-red.gif);
+	background-repeat: no-repeat;
+	background-size: 100vw;
+}
 
 /* SOUND 14 */
