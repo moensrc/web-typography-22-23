@@ -16,9 +16,9 @@ Ik heb gekozen om van Benner gebruik te maken, omdat deze variaties helpen bij h
 ### Tekst laten staan
 Ik wilde met behulp van CSS sommige p's tijdelijk laten staan nadat deze de off-class krijgen, aangezien het dialoog van de Baseline Tests erg snel verloopt. Ik heb hiervoor verschillende opties uitgeprobeerd.
 
-**Transition delay:** werkte niet op beide elementen & op on en off classes.
-**Opacity: 1;:** zorgde ervoor dat deze tekst _altijd_ zichtbaar bleef, wat niet geschikt was.
-**CSS animatie van opacity 1 > 0:** is nu de oplossing die ik heb gekozen. De animatie zorgt voor een verloop van de opacity en heeft een duratie die langer duurt dan de tijd dat de tekst er staat.
+* **Transition delay:** werkte niet op beide elementen & op on en off classes. <br>
+* **Opacity: 1;:** zorgde ervoor dat deze tekst _altijd_ zichtbaar bleef, wat niet geschikt was. <br>
+* **CSS animatie van opacity 1 > 0:** is nu de oplossing die ik heb gekozen. De animatie zorgt voor een verloop van de opacity en heeft een duratie die langer duurt dan de tijd dat de tekst er staat.
 
 
 ### Sound animatie/visualisatie
@@ -32,7 +32,7 @@ Sound 1 is een luide beep die uit 1 geluid bestaat. Om dit visueel weer te geven
 ### Repeating text ("Within cells interlinked")
 Op .p41, .p42 en .p34 wordt dezelfde zin 3 keer herhaald. Ik wilde deze apart weergeven zodat het in de captions duidelijk is dat dit 3 keer wordt gezegd, aangezien het huidig op zijn plek blijft staan.
 
-**Styling:** De eerste twee malen dat K deze zin zegt, worden deze met behulp van de staying-text animation laten staan. Vervolgens wordt de laatste keer dat K dit zegt vormgegeven met een grote fontsize en duidt dit de laatste zin aan van deze test. 
+**Styling:** De eerste twee malen dat K deze zin zegt, worden deze met behulp van de staying-text animation laten staan. Vervolgens wordt de laatste keer dat K dit zegt vormgegeven met een grote fontsize en duidt dit de laatste zin aan van deze test. <br>
 **Interval:** Om deze laatste zin ritme en belang te geven, heb ik gebruik gemaakt van transitions inclusief transition-delays om deze woorden woord voor woord te laten verschijnen op het scherm, wat impact creëert.
 
 ### Sound animatie/visualisatie 2.0
@@ -80,7 +80,7 @@ De volgende test was geïnspireerd door een [Codepen](https://codepen.io/web_des
 
 <img src="./gifs.readme/sound9-texture.gif" alt="Clip with texture overlay 1" width="31%"> <img src="./gifs.readme/sound9-texture2.gif" alt="Clip with texture overlay 2" width="31%"> <img src="./gifs.readme/sound9-texture3.gif" alt="Clip with texture overlay 3" width="31%">
 
-### Repeating text ("Within cells interlinked") 2.0
+### Voortgangsgesprek 1
 #### Feedback (12/10)
 Tijdens het voortgangsgesprek duidde Vasilis erop dat de laatste zin geschreeuwd lijkt te worden door het formaat in contrast met de rest. Het is namelijk zo dat deze tekst over de hele video wordt weergegeven. Dat wilde ik graag aanpassen zodat het niet verwarrend is voor deze doelgroep. Ik wilde wel belang geven aan deze zin omdat dit het einde is van de test, maar het niet groot en schreeuwend weergeven.
 Ik heb dit opgelost door deze zin onder in het scherm te zetten en een groene kleur te geven.
@@ -151,7 +151,6 @@ Om het fragment af te sluiten leek het me geschikt om een soort end-screen te on
 Ook heb ik met de captions van fragment 2 gespeeld. Omdat de HTML anders is geformat, wilde ik graag dat de eindwoorden net als in fragment 1 nadruk geven door de afwisselende en herhalende dialoog spannender te maken en meer snelheid te geven. <br>
 Zo heb ik de laatste woorden van deze zinnen apart gestyled en met een delay gezorgd dat de persoon die deze captions leest, eerst de onderste zin leest en vervolgens pas het verschijnende laatste woord.
 
-
 ### Adding Decoration 2.0
 ***Illustraties*** <br>
 Ook in fragment 2 wilde ik de illustraties toevoegen, hier heb ik er twee om gebruik van te maken. Dit is zo consistent met de styling en branding van mijn eigen opvatting van het fragment en toepassing van mijn eigen visie. 
@@ -159,5 +158,32 @@ Ook in fragment 2 wilde ik de illustraties toevoegen, hier heb ik er twee om geb
 <img src="./images.readme/illustrations-2.1.png" alt="Illustratie K kijkt naar voren" width="99%">
 <img src="./images.readme/illustrations-2.2.png" alt="Illustratie Camera" width="99%">
 
+
 ## Dag 8 (24/10/2022)
-### End Screen
+### Voortgangsgesprek 2
+#### Feedback (24/10)
+Ik ben goed bezig en het is visueel gezien mooi en interessant. Er zijn nog een paar verbeterpunten in detail om het nog een niveau indrukwekkender en tof te maken:
+* Illustraties zijn mooi, maar deze kunnen nog toevoeging bieden aan het geluid. Bijvoorbeeld dat deze tijdens de pieptoon ook bewegen of tijdens de soundscaping in fragment 2 meebewegen. 
+* Sommige teksten zijn nog niet goed leesbaar, zwarte tekst op een zwarte achtergrond.
+
+### Verbetering Leesbaarheid
+Voor de teksten in fragment 2 was het nog van noodzaak om de zwarte tekst op de zwarte achtergrond opvallender te maken. Ik heb een border geprobeerd, dit was te prominent. Vervolgens had ik het idee om een text-shadow toe te voegen en dit was subtiel dus heb ik een tweede text-shadow toegevoegd. Nu valt de shadow beter op en springt de zwarte tekst beter van de zwarte achtergrond. 
+
+### Soundscaping van Fragment 2
+De soundscaping van fragment 2 bestaat uit meerdere geluiden die elkaar overlappen. Soms valt er ook een stilte, bijvoorbeeld wanneer K er langer over doet om te antwoorden. <img src="./images.readme/sound-fragment2.png" alt="Notities geluidsfragmenten" width="25%">
+* Zachte piepgeluiden komen soms voor <br>
+Deze piepgeluiden zijn niet heel consistent en trekken niet volledige aandacht. Bij andere geluiden in het fragment heb ik voor een luide piep een simpele 'flash' van een kleur gebruikt als visualisatie. Dat is voor deze piepgeluiden lastiger, aangezien deze subtieler en met ritme constant zijn. 
+
+* Synth-sounding zoem met een wave <br>
+Het geluid van een zoem neemt toe en af in klankhoogte en volume. Dit is interessant in elkaar gezet, aangezien het volume hoger wordt tijdens het toenemen maar ook tijdens het afnemen op die golf neemt het volume toe. 
+
+* Synth die wakkert <br>
+Voor de synth wilde ik een sound-wave animatie maken die achter de video speelt. Dit laat de robotische en digitaal gecreërde klank van een synthesizer zien. Hiervoor heb ik meerdere opties onderzocht en uiteindelijk voor een vierkante border gekozen die achter de video wordt geplaatst. 
+
+<img src="./gifs.readme/waves-1.gif" alt="Single wave animatie" width="49%"> <img src="./gifs.readme/waves-2.gif" alt="Wave border animatie" width="49%">
+
+
+## Dag 9 (25/10/2022)
+### Soundscaping van Fragment 2 2.0
+
+### Actie met illustratie 
