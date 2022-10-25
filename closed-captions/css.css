@@ -548,7 +548,7 @@ ul, li {
 .p74,
 .p76,
 .p78 {
-	text-shadow: 0 0 3px white;
+	text-shadow: 0 0 3px white, 0 0 10px white;
 }
 
 /**********************/
@@ -1064,13 +1064,7 @@ body.sound10 #illustrations li {
 	position: absolute;
 }
 
-body.sound10 #illustrations li:nth-of-type(4) img {
-	width: 65vw;
-	margin-top: 150px;
-	margin-left: 200px;
-}
-
-body.sound10 #illustrations li:nth-of-type(2) img {
+body.sound10 #illustrations li img {
 	width: 95vw;
 	margin-top: 100px;
 }
@@ -1104,26 +1098,30 @@ body.sound10 #illustrations li:nth-of-type(2) {
 }
 
 /* SOUND 11 */
-body.sound11 {
+/* body.sound11 #video-container {
 	animation: sound-11-frame 2.5s 6 ease-out;
-}
+} */
 
-body.sound11 #video-container {
-	animation: sound-11-soundwaves 10s 6 ease-out;
+body.sound11 {
+	animation: sound-11-soundwaves 10s 4 ease-out;
+	background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 20%, rgba(0,0,0,1) 100%);
+	background-position: 50% 50%;
 }
 
 @keyframes sound-11-soundwaves {
 	0% {
-		box-shadow: 0 0 20px red;
+		background-size: 100%;
 	}
 	40% {
-		box-shadow: 0 0 100px red;
+		background: radial-gradient(circle, rgba(0,255,0,1) 0%, rgba(0,255,0,1) 50%, rgba(0,0,0,1) 100%);
+
+		background-size: 200%;
 	}
 	99% {
-		box-shadow: 0 0 40px red;
+		background-size: 50%;
 	}
 	100% {
-		box-shadow: 0 0 20px red;
+		background-size: 100%;
 	}
 }
 
@@ -1145,7 +1143,7 @@ body.sound11 #video-container {
 
 
 
-/* SOUND 12 */
+/* SOUND 12: Beeping from computer [alert] */
 body.sound12 {
 	animation: sound-12-background 1s 1 ease;
 }
@@ -1182,10 +1180,10 @@ body.sound12 {
 
 
 /* SOUND 13 */
-body.sound13 {
-	background: url(../images/waves-red.gif);
+/* body.sound13 {
+	background: url(../images/waves-2.gif);
 	background-repeat: no-repeat;
 	background-size: 100vw;
-}
+} */
 
 /* SOUND 14 */
