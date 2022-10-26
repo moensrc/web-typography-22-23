@@ -1270,8 +1270,7 @@ body.sound11 {
 /* SOUND 12: Beeping from computer [alert] */
 body.sound12 {
 	animation: sound-12-background 1s 1 ease forwards,
-		sound-12-soundwaves 10s 2 1s ease-out;
-		/* sound-12-removebg .5s 1 20s ease-out forwards; */
+		sound-12-soundwaves 10s 4 1s ease-out;
 }
 
 @keyframes sound-12-background {
@@ -1354,7 +1353,7 @@ body.sound12 {
 } */
 
 body.sound14 {
-	animation: sound-14-removebg 1s 1 ease forwards;
+	animation: sound-14-removebg 1s 1 12s ease forwards;
 }
 
 
