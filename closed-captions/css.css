@@ -14,7 +14,6 @@ body {
 	background-size: 100vw;
 }
 
-
 h1,
 p,
 img {
@@ -190,6 +189,7 @@ li {
 .p7.voice2 {
 	color: white;
 }
+
 
 /**********************/
 /********TEXTS*********/
@@ -370,13 +370,6 @@ li {
 	transition: .2s 1.2s;
 }
 
-
-.p79 {
-	transform: translateY(-5em);
-	font-size: 2em;
-	text-emphasis: filled triangle greenyellow;
-}
-
 /* Textlines from voice1 that need emphasis in cells-scene */
 .p8.off,
 .p11.off,
@@ -391,11 +384,6 @@ li {
 .p36.off,
 .p38.off {
 	animation: staying-text 1.02s ease;
-}
-
-
-.p77.off {
-	animation: staying-text 2s ease;
 }
 
 /* Textlines from voice2 that need emphasis in cells-scene */
@@ -552,6 +540,18 @@ li {
 .p78 {
 	text-shadow: 0 0 3px white, 0 0 10px white;
 }
+
+.p77.off {
+	animation: staying-text 2s ease;
+}
+
+.p79 {
+	transform: translateY(-5em);
+	font-size: 2em;
+	font-weight: 800;
+	text-emphasis: filled triangle red;
+}
+
 
 /**********************/
 /*******SOUNDS*********/
@@ -922,12 +922,14 @@ body.sound9 #illustrations li:nth-of-type(3) img {
 
 body.sound9 #illustrations li:nth-of-type(1) {
 	animation: show-sound9-image 1s 1 22s forwards,
-		remove-sound9-image 1s 1 37s forwards;
+		remove-sound9-image 1s 1 32s forwards,
+		shake-sound-9 .6s 18 22s;
 }
 
 body.sound9 #illustrations li:nth-of-type(2) {
-	animation: show-sound9-image 1s 1 38s forwards,
-		remove-sound9-image 1s 1 41s forwards;
+	animation: show-sound9-image 1s 1 34s forwards,
+		remove-sound9-image 1s 1 41s forwards,
+		shake-sound-9 .6s 13 34s;
 }
 
 body.sound9 #illustrations li:nth-of-type(3) {
@@ -952,6 +954,32 @@ body.sound9 #illustrations li:nth-of-type(3) {
 
 	100% {
 		opacity: 0;
+	}
+}
+
+@keyframes shake-sound-9 {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	20% {
+		transform: translate(5px, 0);
+	}
+
+	40% {
+		transform: translate(-5px, 5px);
+	}
+
+	60% {
+		transform: translate(15px, 0);
+	}
+
+	80% {
+		transform: translate(0, -10px);
+	}
+
+	100% {
+		transform: translate(0, 0);
 	}
 }
 
@@ -1183,15 +1211,36 @@ body.sound10 #illustrations li img {
 	margin-top: 100px;
 }
 
-body.sound10 #illustrations li:nth-of-type(4) {
-	animation: show-sound10-image 1s 1 12s forwards,
-		remove-sound10-image 1s 1 18s forwards;
+body.sound10 #illustrations li:nth-of-type(4) img {
+	margin-top: 20px;
 }
 
-body.sound10 #illustrations li:nth-of-type(2) {
+body.sound10 #illustrations li:nth-of-type(7) img {
+	margin-top: 75px;
+}
+
+body.sound10 #illustrations li:nth-of-type(4) {
+	animation: show-sound10-image 1s 1 12s forwards,
+		remove-sound10-image 1s 1 16s forwards,
+		sound10-ill4 1.3s 3 12.2s ease-in forwards;
+}
+
+body.sound10 #illustrations li:nth-of-type(6) {
+	animation: show-sound10-image 1s 1 17s forwards,
+		remove-sound10-image 1s 1 22.5s forwards,
+		sound10-ill6 4s 1 18s ease-in forwards;
+}
+
+body.sound10 #illustrations li:nth-of-type(7) {
+	animation: show-sound10-image 1s 1 33s forwards,
+		remove-sound10-image 1s 1 36s forwards,
+		sound10-ill7 4s 1 33s ease-in forwards;
+}
+
+/* body.sound10 #illustrations li:nth-of-type(2) {
 	animation: show-sound10-image 1s 1 42s forwards,
 		remove-sound10-image 1s 1 50s forwards;
-}
+} */
 
 @keyframes show-sound10-image {
 	0% {
@@ -1213,6 +1262,67 @@ body.sound10 #illustrations li:nth-of-type(2) {
 	}
 }
 
+/* Illustration 4: K has an emotionless face */
+/* Heartbeat inspired animation */
+@keyframes sound10-ill4 {
+	0% {
+		transform: scale(1);
+	}
+
+	5% {
+		transform: scale(1.1);
+	}
+
+	10% {
+		transform: scale(1);
+	}
+
+	15% {
+		transform: scale(1.2);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Illustration 6: Boss with computer screens */
+@keyframes sound10-ill6 {
+	0% {
+		transform: scale(1) rotate(0deg);
+	}
+	50% {
+		transform: scale(1.1) rotate(-.1deg);
+	}
+
+	55% {
+		transform: scale(1.1) rotate(.1deg);
+	}
+
+	60% {
+		transform: scale(1.1) rotate(0);
+	}
+
+	100% {
+		transform: scale(1) rotate(0);
+	}
+}
+
+
+/* Illustration 7: Scan of K */
+@keyframes sound10-ill7 {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.1);
+	}
+}
+
 /* SOUND 11 */
 /* body.sound11 #video-container {
 	animation: sound-11-frame 5s 6 ease-out;
@@ -1222,7 +1332,7 @@ body.sound11 {
 	background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 100%);
 	background-position: 50% 50%;
 	background-size: 100%;
-	animation: sound-11-soundwaves 9s 2 ease-out forwards;
+	animation: sound-11-soundwaves 9s 3 ease-out forwards;
 }
 
 /* body.sound11 #background2 {
@@ -1270,12 +1380,13 @@ body.sound11 {
 /* SOUND 12: Beeping from computer [alert] */
 body.sound12 {
 	animation: sound-12-background 1s 1 ease forwards,
-		sound-12-soundwaves 10s 4 1s ease-out;
+		sound-12-soundwaves 9s 5 1s ease-out;
 }
 
+/* Beeping (flashes color) */
 @keyframes sound-12-background {
 	0% {
-		background: black;
+		background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 100%);
 	}
 
 	10% {
@@ -1322,7 +1433,7 @@ body.sound12 {
 		background-position: 100% 100%;
 	}
 
-	99% {
+	80% {
 		background-size: 200%;
 		background-position: 0% 0%;
 	}
