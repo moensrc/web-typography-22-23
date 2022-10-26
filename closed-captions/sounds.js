@@ -15,7 +15,8 @@ sounds = [
 	87,
 	103, 
 	105,
-	117
+	117,
+	130
 ];
 
 //sound0 0 = intro sound fragment 1
@@ -33,3 +34,4 @@ sounds = [
 //sound12 103 = beep beep notification
 //sound13 105 = louder build-up from sound 10
 //sound14 117 = increasing overlapped sound
+//sound15 130 = silence

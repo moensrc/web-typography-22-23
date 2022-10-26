@@ -14,6 +14,7 @@ body {
 	background-size: 100vw;
 }
 
+
 h1,
 p,
 img {
@@ -30,7 +31,7 @@ h1 {
 	font-family: "Brenner Mono";
 	font-style: Italic;
 	font-weight: 800;
-	font-size: 3em;	
+	font-size: 3em;
 	transition: .3s ease 1s;
 }
 
@@ -49,22 +50,20 @@ h1:before {
 	transition: .3s ease 1s;
 }
 
-/* #video-container:before {
-	content: "";
-	position: absolute;
-	height: 69vh;
-	width: 80vw;
-	background-image: url(../images/2049.1.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	opacity: 0;
-	pointer-events: none;
-} */
-
 #video-container {
 	position: relative;
 	margin: auto;
 	transform: scale(0.6);
+}
+
+#background2 {
+	position: absolute;
+	z-index: -2;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 0) 25%, rgba(0, 255, 0, 1) 50%, rgba(255, 0, 0, 0) 75%, rgba(255, 0, 0, 0) 100%);
+	background-position: 50% 50%;
+	opacity: 0;
 }
 
 #video-mask {
@@ -82,7 +81,8 @@ iframe {
 }
 
 /* Illustrations for background */
-ul, li {
+ul,
+li {
 	margin: 0;
 	list-style-type: none;
 }
@@ -150,7 +150,7 @@ ul, li {
 #closed-captions p.voice3 {
 	font-family: "Brenner Sans";
 	font-style: normal;
-	font-weight: 400;	
+	font-weight: 400;
 	font-size: 20px;
 	color: red;
 	text-shadow: 0 0 5px black;
@@ -183,12 +183,12 @@ ul, li {
 }
 
 /* When scene is dark, textcolor is white */
-.p1.voice2, 
-.p3.voice2, 
-.p4.voice2, 
-.p5.voice2, 
+.p1.voice2,
+.p3.voice2,
+.p4.voice2,
+.p5.voice2,
 .p7.voice2 {
-	color:white;
+	color: white;
 }
 
 /**********************/
@@ -200,9 +200,11 @@ ul, li {
 	0% {
 		opacity: 1;
 	}
+
 	90% {
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -212,9 +214,11 @@ ul, li {
 	0% {
 		opacity: 0;
 	}
+
 	20% {
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -294,7 +298,7 @@ ul, li {
 }
 
 .p2.on span:nth-of-type(3) {
-	text-emphasis: "_" greenyellow;
+	text-emphasis: "_"greenyellow;
 }
 
 .p6 span:nth-of-type(3) {
@@ -334,6 +338,7 @@ ul, li {
 	text-emphasis: open circle greenyellow;
 }
 
+/* Fix for height being unset */
 .p50,
 .p52,
 .p61,
@@ -356,11 +361,11 @@ ul, li {
 	transform: translateY(-7.5em);
 }
 
+/* When last words get class .on, show them later */
 .p50.on span:nth-of-type(8),
 .p52.on span:nth-of-type(15),
 .p61.on span:nth-of-type(9),
 .p63.on span:nth-of-type(9) {
-	/* animation: show-text 1s 1s; */
 	opacity: 1;
 	transition: .2s 1.2s;
 }
@@ -469,11 +474,8 @@ ul, li {
 	right: 0;
 	margin: 0;
 
-	/* text-align: center; */
 	font-size: 30px;
 	color: red;
-	/* -webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black; */
 }
 
 .p43 span {
@@ -520,7 +522,7 @@ ul, li {
 #closed-captions p.error span:nth-of-type(2) {
 	font-weight: 800;
 	text-transform: uppercase;
-	text-emphasis: "⊘" red;
+	text-emphasis: "⊘"red;
 }
 
 .p48.off,
@@ -575,6 +577,7 @@ body.sound0 #illustrations {
 	0% {
 		transform: scale(0.6);
 	}
+
 	100% {
 		transform: scale(1);
 	}
@@ -585,7 +588,7 @@ body.sound0 #illustrations {
 	animation: sound-1-movement 1.2s ease forwards;
 }
 
-body.sound1  {
+body.sound1 {
 	animation: sound-1-background 1.2s forwards;
 }
 
@@ -593,27 +596,35 @@ body.sound1  {
 	0% {
 		transform: scale(1) rotate(0);
 	}
+
 	10% {
 		transform: scale(1.08) rotate(-.5deg);
 	}
+
 	20% {
 		transform: scale(1.1) rotate(.5deg);
 	}
+
 	30% {
 		transform: scale(1.08) rotate(-.5deg);
 	}
+
 	40% {
 		transform: scale(1.1) rotate(.5deg);
 	}
+
 	50% {
 		transform: scale(1.08) rotate(-.5deg);
 	}
+
 	60% {
 		transform: scale(1.1) rotate(.5deg);
 	}
+
 	80% {
 		transform: scale(1) rotate(0);
 	}
+
 	100% {
 		transform: scale(1) rotate(0);
 	}
@@ -623,27 +634,35 @@ body.sound1  {
 	0% {
 		background: black;
 	}
+
 	10% {
-		background: darkred;	
+		background: darkred;
 	}
+
 	20% {
-		background: red;	
+		background: red;
 	}
+
 	30% {
-		background: darkred;	
+		background: darkred;
 	}
+
 	40% {
-		background: red;	
+		background: red;
 	}
+
 	50% {
 		background: darkred;
 	}
+
 	60% {
-		background: red;	
+		background: red;
 	}
+
 	80% {
 		background: darkred;
 	}
+
 	100% {
 		background: black;
 	}
@@ -689,14 +708,15 @@ body.sound4 #illustrations li img {
 
 body.sound4 #illustrations li:nth-of-type(5) {
 	animation: show-sound4-image 1s 1 8s forwards,
-	walk-sound4-image .5s 16 8s ease-in,
-	remove-sound4-image 1s 1 15s forwards;
+		walk-sound4-image .5s 16 8s ease-in,
+		remove-sound4-image 1s 1 15s forwards;
 }
 
 @keyframes show-sound4-image {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -706,6 +726,7 @@ body.sound4 #illustrations li:nth-of-type(5) {
 	0% {
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -715,9 +736,11 @@ body.sound4 #illustrations li:nth-of-type(5) {
 	0% {
 		transform: translateY(0);
 	}
+
 	70% {
 		transform: translateY(-1.5em);
 	}
+
 	100% {
 		transform: translateY(0);
 	}
@@ -749,9 +772,11 @@ body.sound8 {
 	0% {
 		background-position: 0% 20%;
 	}
+
 	90% {
 		background-position: 100% 100%;
 	}
+
 	100% {
 		background-position: 80% 80%;
 	}
@@ -761,9 +786,11 @@ body.sound8 {
 	0% {
 		background-position: 0% 20%;
 	}
+
 	90% {
 		background-position: 100% 100%;
 	}
+
 	100% {
 		background-position: 80% 80%;
 	}
@@ -773,9 +800,11 @@ body.sound8 {
 	0% {
 		background-position: 0% 20%;
 	}
+
 	90% {
 		background-position: 100% 100%;
 	}
+
 	100% {
 		background-position: 80% 80%;
 	}
@@ -785,12 +814,15 @@ body.sound8 {
 	0% {
 		background-color: black;
 	}
+
 	20% {
 		background-color: greenyellow;
 	}
+
 	80% {
 		background-color: greenyellow;
 	}
+
 	100% {
 		background-color: black;
 	}
@@ -800,12 +832,15 @@ body.sound8 {
 	0% {
 		background-color: black;
 	}
+
 	20% {
 		background-color: greenyellow;
 	}
+
 	80% {
 		background-color: greenyellow;
 	}
+
 	100% {
 		background-color: black;
 	}
@@ -815,28 +850,26 @@ body.sound8 {
 	0% {
 		background-color: black;
 	}
+
 	20% {
 		background-color: greenyellow;
 	}
+
 	80% {
 		background-color: greenyellow;
 	}
+
 	100% {
 		background-color: black;
 	}
 }
-
-
-
-
-
 
 /* SOUND 9 */
 /* Animation inspired by https://codepen.io/web_designer_sanchit/pen/aaVPzq */
 /* Overlay in HTML section with bg glitch image */
 body section#overlay {
 	opacity: 0;
-	position:absolute;
+	position: absolute;
 	width: 100vw;
 	height: 100vh;
 
@@ -846,8 +879,8 @@ body section#overlay {
 }
 
 /* Duplicate of image in before pseudoelement for glitch animation */
-section#overlay:before{
-	content:'';
+section#overlay:before {
+	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -866,10 +899,10 @@ body.sound9 section#overlay {
 	/* mix-blend-mode: multiply; */
 
 	animation: sound-9-glitch1 1s 10 2s,
-	sound-9-glitch2 .7s 18 12s,
-	sound-9-glitch3 .5s 16 24.6s,
-	sound-9-glitch4 .3s 30 32.6s,
-	increase-opacity 41.8s ease-out 1;
+		sound-9-glitch2 .7s 18 12s,
+		sound-9-glitch3 .5s 16 24.6s,
+		sound-9-glitch4 .3s 30 32.6s,
+		increase-opacity 41.8s ease-out 1;
 }
 
 body.sound9 #video-container {
@@ -889,23 +922,24 @@ body.sound9 #illustrations li:nth-of-type(3) img {
 
 body.sound9 #illustrations li:nth-of-type(1) {
 	animation: show-sound9-image 1s 1 22s forwards,
-	remove-sound9-image 1s 1 37s forwards;
+		remove-sound9-image 1s 1 37s forwards;
 }
 
 body.sound9 #illustrations li:nth-of-type(2) {
 	animation: show-sound9-image 1s 1 38s forwards,
-	remove-sound9-image 1s 1 41s forwards;
+		remove-sound9-image 1s 1 41s forwards;
 }
 
 body.sound9 #illustrations li:nth-of-type(3) {
 	animation: show-sound9-image 1s 1 44s forwards,
-	remove-sound9-image 1s 1 51.1s forwards;
+		remove-sound9-image 1s 1 51.1s forwards;
 }
- 
+
 @keyframes show-sound9-image {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -915,6 +949,7 @@ body.sound9 #illustrations li:nth-of-type(3) {
 	0% {
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -924,6 +959,7 @@ body.sound9 #illustrations li:nth-of-type(3) {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: .3;
 	}
@@ -933,6 +969,7 @@ body.sound9 #illustrations li:nth-of-type(3) {
 	0% {
 		transform: scale(1);
 	}
+
 	100% {
 		transform: scale(1.1);
 	}
@@ -941,152 +978,192 @@ body.sound9 #illustrations li:nth-of-type(3) {
 @keyframes sound-9-glitch1 {
 	0% {
 		background-position: 0 0;
-		filter:hue-rotate(0deg);
+		filter: hue-rotate(0deg);
 	}
+
 	10% {
 		background-position: 5px 0;
 	}
+
 	20% {
 		background-position: -5px 0;
 	}
+
 	30% {
 		background-position: 15px 0;
 	}
+
 	40% {
 		background-position: 5px 0;
 	}
+
 	50% {
 		background-position: -25px 0;
 	}
+
 	60% {
 		background-position: -50px 0;
 	}
+
 	70% {
 		background-position: 0 -20px;
 	}
+
 	80% {
 		background-position: -60px -20px;
 	}
+
 	81% {
 		background-position: 0 0;
 	}
+
 	100% {
 		background-position: 0 0;
-		filter:hue-rotate(360deg);
+		filter: hue-rotate(360deg);
 	}
 }
 
 @keyframes sound-9-glitch2 {
 	0% {
 		background-position: 0 0;
-		filter:hue-rotate(0deg);
+		filter: hue-rotate(0deg);
 	}
+
 	10% {
 		background-position: 5px 0;
 	}
+
 	20% {
 		background-position: -25px 0;
 	}
+
 	30% {
 		background-position: 15px 0;
 	}
+
 	40% {
 		background-position: 5px 0;
 	}
+
 	50% {
 		background-position: -5px 0;
 	}
+
 	60% {
 		background-position: -20px -50px;
 	}
+
 	70% {
 		background-position: 0 -20px;
 	}
+
 	80% {
 		background-position: -60px -20px;
 	}
+
 	81% {
 		background-position: 0 0;
 	}
+
 	100% {
 		background-position: 0 0;
-		filter:hue-rotate(360deg);
+		filter: hue-rotate(360deg);
 	}
 }
 
 @keyframes sound-9-glitch3 {
 	0% {
 		background-position: 0 0;
-		filter:hue-rotate(0deg);
+		filter: hue-rotate(0deg);
 	}
+
 	10% {
 		background-position: 10px 0;
 	}
+
 	20% {
 		background-position: -25px -50px;
 	}
+
 	30% {
 		background-position: 15px 15px;
 	}
+
 	40% {
 		background-position: 5px 0;
 	}
+
 	50% {
 		background-position: 0 -5px;
 	}
+
 	60% {
 		background-position: -20px -60px;
 	}
+
 	70% {
 		background-position: 10px -20px;
 	}
+
 	80% {
 		background-position: -60px -5px;
 	}
+
 	81% {
 		background-position: 0 0;
 	}
+
 	100% {
 		background-position: 0 0;
-		filter:hue-rotate(360deg);
+		filter: hue-rotate(360deg);
 	}
 }
 
 @keyframes sound-9-glitch4 {
 	0% {
 		background-position: 0 0;
-		filter:hue-rotate(0deg);
+		filter: hue-rotate(0deg);
 	}
+
 	10% {
 		background-position: 100px 0;
 	}
+
 	20% {
 		background-position: -50px -60px;
 	}
+
 	30% {
 		background-position: -80px 15px;
 	}
+
 	40% {
 		background-position: 25px 0;
 	}
+
 	50% {
 		background-position: 0 -60px;
 	}
+
 	60% {
 		background-position: 30px -20px;
 	}
+
 	70% {
 		background-position: 100px -20px;
 	}
+
 	80% {
 		background-position: -60px -10px;
 	}
+
 	81% {
 		background-position: 0 0;
 	}
+
 	100% {
 		background-position: 0 0;
-		filter:hue-rotate(360deg);
+		filter: hue-rotate(360deg);
 	}
 }
 
@@ -1108,18 +1185,19 @@ body.sound10 #illustrations li img {
 
 body.sound10 #illustrations li:nth-of-type(4) {
 	animation: show-sound10-image 1s 1 12s forwards,
-	remove-sound10-image 1s 1 18s forwards;
+		remove-sound10-image 1s 1 18s forwards;
 }
 
 body.sound10 #illustrations li:nth-of-type(2) {
 	animation: show-sound10-image 1s 1 42s forwards,
-	remove-sound10-image 1s 1 50s forwards;
+		remove-sound10-image 1s 1 50s forwards;
 }
 
 @keyframes show-sound10-image {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -1129,106 +1207,169 @@ body.sound10 #illustrations li:nth-of-type(2) {
 	0% {
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 0;
 	}
 }
 
 /* SOUND 11 */
-body.sound11 #video-container {
-	animation: sound-11-frame 2.5s 6 ease-out;
-}
+/* body.sound11 #video-container {
+	animation: sound-11-frame 5s 6 ease-out;
+} */
 
 body.sound11 {
-	background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 10%, rgba(0,0,0,1) 100%);
+	background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 100%);
 	background-position: 50% 50%;
 	background-size: 100%;
-	animation: sound-11-soundwaves 10s 4 ease-out forwards;
+	animation: sound-11-soundwaves 9s 2 ease-out forwards;
 }
+
+/* body.sound11 #background2 {
+	opacity: 1;
+	animation: sound-11-scan 3s 3 ease-out forwards;
+} */
 
 @keyframes sound-11-soundwaves {
 	0% {
 		background-size: 100%;
 		background-position: 50% 50%;
 	}
+
 	40% {
 		background-size: 300%;
 		background-position: 100% 100%;
 	}
-	99% {
+
+	80% {
 		background-size: 200%;
 		background-position: 0% 0%;
 	}
+
 	100% {
 		background-size: 100%;
-		background-position: 0% 0%;
+		background-position: 50% 50%;
 	}
 }
 
-@keyframes sound-11-frame {
+@keyframes sound-11-scan {
 	0% {
-		box-shadow: none;
+		background-position: 50% 50%;
 	}
-	40% {
-		box-shadow: inset 0 0 100px greenyellow;
+	33% {
+		background-position: 50% 0%;
 	}
-	99% {
-		box-shadow: inset 0 0 40px greenyellow;
+	66% {
+		background-position: 50% 100%;
 	}
 	100% {
-		box-shadow: inset 0 0 20px greenyellow;
+		background-position: 50% 50%;
 	}
 }
-
 
 /* SOUND 12: Beeping from computer [alert] */
 body.sound12 {
-	animation: sound-12-background 1s 1 ease;
-	background: black;
-
+	animation: sound-12-background 1s 1 ease forwards,
+		sound-12-soundwaves 10s 2 1s ease-out;
+		/* sound-12-removebg .5s 1 20s ease-out forwards; */
 }
 
 @keyframes sound-12-background {
 	0% {
 		background: black;
 	}
+
 	10% {
-		background: darkred;	
+		background: darkred;
 	}
+
 	20% {
-		background: red;	
+		background: red;
 	}
+
 	30% {
-		background: darkred;	
+		background: darkred;
 	}
+
 	40% {
-		background: red;	
+		background: red;
 	}
+
 	50% {
 		background: darkred;
 	}
+
 	60% {
-		background: red;	
+		background: red;
 	}
+
 	80% {
 		background: darkred;
 	}
+
+	100% {
+		background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 100%);
+	}
+}
+
+@keyframes sound-12-soundwaves {
+	0% {
+		background-size: 100%;
+		background-position: 50% 50%;
+	}
+
+	40% {
+		background-size: 300%;
+		background-position: 100% 100%;
+	}
+
+	99% {
+		background-size: 200%;
+		background-position: 0% 0%;
+	}
+
+	100% {
+		background-size: 100%;
+		background-position: 50% 50%;
+	}
+}
+
+
+/* SOUND 14 */
+/* body.sound14 {
+	background: url(../images/waves-2.gif) !important;
+	background-repeat: no-repeat !important;
+	background-size: 100vw !important;
+
+	animation: remove-bg .5s 1 2s ease-in forwards;
+}
+
+@keyframes remove-bg {
+	0% {
+		background: url(../images/waves-2.gif);
+	}
+	100% {
+		background: black;
+	}
+} */
+
+body.sound14 {
+	animation: sound-14-removebg 1s 1 ease forwards;
+}
+
+
+@keyframes sound-14-removebg {
+	0% {
+		background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 100%);
+	}
+
 	100% {
 		background: black;
 	}
 }
 
-/* SOUND 13 */
-/* body.sound13 {
-	background: url(../images/waves-2.gif);
-	background-repeat: no-repeat;
-	background-size: 100vw;
-} */
-
-
-/* SOUND 14 */
-
 /* SOUND 15 */
 body.sound15 {
 	background: black;
 }
+
