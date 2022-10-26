@@ -28,7 +28,7 @@ h1 {
 
 	color: black;
 	font-family: "Brenner Mono";
-	font-style: Italic;
+	font-style: italic;
 	font-weight: 800;
 	font-size: 3em;
 	transition: .3s ease 1s;
@@ -546,10 +546,14 @@ li {
 }
 
 .p79 {
-	transform: translateY(-5em);
+	transform: translateY(-2em);
 	font-size: 2em;
 	font-weight: 800;
-	text-emphasis: filled triangle red;
+}
+
+.p79 span:nth-of-type(6) {
+	font-family: "Brenner Mono";
+	text-emphasis: open triangle black;
 }
 
 
@@ -1228,7 +1232,7 @@ body.sound10 #illustrations li:nth-of-type(4) {
 body.sound10 #illustrations li:nth-of-type(6) {
 	animation: show-sound10-image 1s 1 17s forwards,
 		remove-sound10-image 1s 1 22.5s forwards,
-		sound10-ill6 4s 1 18s ease-in forwards;
+		sound10-ill6 3s 1 20s ease-in forwards;
 }
 
 body.sound10 #illustrations li:nth-of-type(7) {
@@ -1293,22 +1297,15 @@ body.sound10 #illustrations li:nth-of-type(7) {
 /* Illustration 6: Boss with computer screens */
 @keyframes sound10-ill6 {
 	0% {
-		transform: scale(1) rotate(0deg);
+		transform: scale(1) translateY(0);
 	}
-	50% {
-		transform: scale(1.1) rotate(-.1deg);
-	}
-
-	55% {
-		transform: scale(1.1) rotate(.1deg);
-	}
-
-	60% {
-		transform: scale(1.1) rotate(0);
+	
+	30% {
+		transform: scale(1.1) translateY(-.1em);
 	}
 
 	100% {
-		transform: scale(1) rotate(0);
+		transform: scale(1) translateY(0);
 	}
 }
 
@@ -1463,7 +1460,7 @@ body.sound12 {
 	}
 } */
 
-body.sound14 {
+/* body.sound14 {
 	animation: sound-14-removebg 1s 1 12s ease forwards;
 }
 
@@ -1476,10 +1473,10 @@ body.sound14 {
 	100% {
 		background: black;
 	}
-}
+} */
 
 /* SOUND 15 */
 body.sound15 {
-	background: black;
+	background: black !important;
 }
 
