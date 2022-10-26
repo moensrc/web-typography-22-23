@@ -1,7 +1,9 @@
 # Web Typografie (2022/2023)
-Minor Vid, Rosella Moens
+Minor VID semester 1, Rosella Moens
 
+Online site: https://moensrc.github.io/web-typography-22-23/closed-captions 
 
+# Proces
 ## Dag 1 (10/10/2022)
 ### Start project
 Voor het visueel maken van het geluid van dit **filmfragment uit Blade Runner 2049**, heb ik deze meerdere malen bekeken. Ik ben direct daarna een paar basis elementen op gaan zetten: ik heb hier bijvoorbeeld de tekst over de video geplaatst en twee voices van een typografie voorzien. 
@@ -27,6 +29,9 @@ Ik ben ook begonnen met het spelen met de geluiden uit de sounds array: Hoe geef
 ***Sound 1*** <br>
 Sound 1 is een luide beep die uit 1 geluid bestaat. Om dit visueel weer te geven heb ik de video-container en body gestyled wanneer het geluid afgaat. De videocontainer schudt met behulp van animation siren-1-movement en de body krijgt verschillende flikkerende achtergrondkleuren met animation siren-1-background. Deze movement in de animaties loopt op het geluid.
 
+----
+
+<br>
 
 ## Dag 2 (11/10/2022)
 ### Repeating text ("Within cells interlinked")
@@ -68,6 +73,8 @@ Verder heb ik tweaks gedaan aan:
 * De herhalende teksten van K en de tester zoals: "Cells, cells" en "Interlinked, interlinked", heb ik meer visuele ruimte gegeven door deze groter te maken. Ze vullen zo mooi de ruimte aan de linkerzijde van K tijdens de scene.
 * Hiërarchie in CSS-file voor mijn eigen overzicht.
 
+----
+<br>
 
 ## Dag 3 (12/10/2022)
 ### Sound animatie/visualisatie 3.0
@@ -85,6 +92,8 @@ De volgende test was geïnspireerd door een [Codepen](https://codepen.io/web_des
 Tijdens het voortgangsgesprek duidde Vasilis erop dat de laatste zin geschreeuwd lijkt te worden door het formaat in contrast met de rest. Het is namelijk zo dat deze tekst over de hele video wordt weergegeven. Dat wilde ik graag aanpassen zodat het niet verwarrend is voor deze doelgroep. Ik wilde wel belang geven aan deze zin omdat dit het einde is van de test, maar het niet groot en schreeuwend weergeven.
 Ik heb dit opgelost door deze zin onder in het scherm te zetten en een groene kleur te geven.
 
+----
+<br>
 
 ## Dag 4 (13/10/2022)
 ### Personaliteit in voice 4
@@ -97,6 +106,8 @@ Door geluiden en het gebrek aan geluiden heb ik op verschillende plekken in het 
 * De video schaalt direct af nadat de 'Cells'-scene voorbij is en de pieptoon stopt.
 * De video schaalt op nadat het fragment voor de tweede baseline test begint.
 
+----
+<br>
 
 ## Dag 5 (17/10/2022)
 ### Adding Decoration
@@ -125,6 +136,8 @@ Om meer impressie te geven van het fragment zelf op de landingspage voordat de v
 <img src="./images.readme/title-baselinetest-test.png" alt="Test voor Titel" width="49%"> <img src="./images.readme/title-baselinetest-test2.png" alt="Test voor Titel 2" width="49%">
 <img src="./images.readme/title-finish.png" alt="Titel na testen" width="99%">
 
+----
+<br>
 
 ## Dag 6 (19/10/2022)
 ### Adding More Nonsense
@@ -140,6 +153,8 @@ Als overlay voor de achtergrond met illustraties wilde ik een bewegend element t
 
 <img src="./images.readme/animation-rain.gif" alt="Rain animation (13 frames)" width="99%">
 
+----
+<br>
 
 ## Dag 7 (22/10/2022)
 ### End Screen
@@ -158,6 +173,8 @@ Ook in fragment 2 wilde ik de illustraties toevoegen, hier heb ik er twee om geb
 <img src="./images.readme/illustrations-2.1.png" alt="Illustratie K kijkt naar voren" width="99%">
 <img src="./images.readme/illustrations-2.2.png" alt="Illustratie Camera" width="99%">
 
+----
+<br>
 
 ## Dag 8 (24/10/2022)
 ### Voortgangsgesprek 2
@@ -170,7 +187,8 @@ Ik ben goed bezig en het is visueel gezien mooi en interessant. Er zijn nog een 
 Voor de teksten in fragment 2 was het nog van noodzaak om de zwarte tekst op de zwarte achtergrond opvallender te maken. Ik heb een border geprobeerd, dit was te prominent. Vervolgens had ik het idee om een text-shadow toe te voegen en dit was subtiel dus heb ik een tweede text-shadow toegevoegd. Nu valt de shadow beter op en springt de zwarte tekst beter van de zwarte achtergrond. 
 
 ### Soundscaping van Fragment 2
-De soundscaping van fragment 2 bestaat uit meerdere geluiden die elkaar overlappen. Soms valt er ook een stilte, bijvoorbeeld wanneer K er langer over doet om te antwoorden. <img src="./images.readme/sound-fragment2.png" alt="Notities geluidsfragmenten" width="25%">
+De soundscaping van fragment 2 bestaat uit meerdere geluiden die elkaar overlappen. Soms valt er ook een stilte, bijvoorbeeld wanneer K er langer over doet om te antwoorden. <br>
+<img src="./images.readme/sound-fragment2.png" alt="Notities geluidsfragmenten" width="35%">
 * Zachte piepgeluiden komen soms voor <br>
 Deze piepgeluiden zijn niet heel consistent en trekken niet volledige aandacht. Bij andere geluiden in het fragment heb ik voor een luide piep een simpele 'flash' van een kleur gebruikt als visualisatie. Dat is voor deze piepgeluiden lastiger, aangezien deze subtieler en met ritme constant zijn. 
 
@@ -182,8 +200,98 @@ Voor de synth wilde ik een sound-wave animatie maken die achter de video speelt.
 
 <img src="./gifs.readme/waves-1.gif" alt="Single wave animatie" width="49%"> <img src="./gifs.readme/waves-2.gif" alt="Wave border animatie" width="49%">
 
+Dit werkte uiteindelijk niet en was ongeschikt voor het geluid, dit heb ik niet verder gebruikt.
+
+----
+<br>
 
 ## Dag 9 (25/10/2022)
 ### Soundscaping van Fragment 2 2.0
+Om de wave weer te geven met de overlay van de synth heb ik gespeeld met verschillende overlappende gradients. De kleuren werkten niet lekker met elkaar en de timing was ook lastig in te schatten, door de inconsistentie van het ritme. 
 
+<img src="./gifs.readme/sound11-test.gif" alt="Overlappende sounds" width="49%"> <img src="./gifs.readme/sound11-test2.gif" alt="Overlappende sounds 2" width="49%"> 
+
+Voor de overkoepelende wave synth sound heb ik de background gradient gebruikt. Dit heb ik geprobeerd om te overlappen met een :before pseudo element om een gradient aan te maken met nog een animatie. Deze animeerde niet. Met een nieuwe div had ik hetzelfde probleem. 
+
+----
+<br>
+
+## Dag 10 (26/10/2022)
 ### Actie met illustratie 
+In het voortgangsgesprek kwam al naar voren dat de illustraties hier een belangrijkere rol mogen krijgen. Zo kan ik ze gebruiken om het geluid en beweging te visualiseren. 
+
+Ik heb hiervoor nog een paar illustraties gemaakt zodat het consistenter voorkomt in de fragmenten. Deze illustraties zijn voorzien van animaties op basis van de muziek, geluiden, bewegingen of spanningsniveaus.
+
+<img src="./gifs.readme/illustration-move1.gif" alt="K loopt" width="49%"> <img src="./gifs.readme/illustration-move2.gif" alt="K en camera schudden" width="49%"> 
+<img src="./gifs.readme/illustration-move3.gif" alt="K is stil, hij wacht om antwoord te geven" width="99%">
+
+
+----
+<br>
+
+# Principles
+## Study situation
+### Blade Runner 2049
+Om de situatie en context te begrijpen heb ik ten eerste de video meerdere malen gekeken. Hier ben ik ingedoken door goed naar de dialoog, de sound-effects en de soundscaping van de fragmenten te luisteren. 
+Om meer te weten te komen over de personages heb ik uiteindelijk de film ook gekeken, na het opzoeken van informatie op film wiki's. 
+
+### Context en doelgroep
+Voor Doven iets ontwerpen brengt veel uitdagingen met zich mee. Wat ik vooral tijdens dit project merkte is dat het aanpassen van de typografie vooral lastig is. Je zorgt al snel voor een andere emotie of volume door een tekst groter of bolder te maken. 
+Omdat je bovendien ook de tekst leesbaar en representatief wil houden voor de film, kan je niet te veel met deze tekst elementen spelen. 
+
+Zo heb ik dus met behulp van beeld en illustraties in mijn eigen opvatting van het fragment en identiteit het fragment voor Doven ook interessant en aantrekkelijk te maken.
+Zonder geluid is het fragment namelijk erg oninteressant en bijna saai.
+
+
+## Ignore conventions
+### Afwijking van mainstream caption ontwerp
+Bekende conventies uit gewoonlijke captions zijn:
+1. onderaan in het midden staat de ondertiteling
+2. de tekst is wit op een zwarte achtergrond
+3. elk karakter heeft dezelfde visuele identiteit in de captions
+4. geluiden worden met tekst omschreven
+
+Ik heb dit willen omzeilen en aanpassen door de tekst:
+1. op verschillende plekken te plaatsen, maar wel consistent genoeg zodat iemand niet wordt afgeleid door de tekst. Het moet niet afnemen van de film.
+2. de tekst is zwart, rood, of groen bepalend door de vormgeving van de typografie voor het karakter.
+3. de tekst wordt vormgegeven aan de hand van het karakter.
+4. geluiden worden met gradients, knipperende achtergrondkleuren en illustraties omvangen.
+
+
+## Prioritize identity
+### Een eigen identiteit
+Voor dit fragment wilde ik iets creëren dat dicht bij de film ligt, maar ook compleet hierbuiten valt. De captions moeten bovendien wel in een contrast staan met de film. 
+
+<img src="./images.readme/moodboard.png" alt="Moodboard" width="99%">
+
+Aan de hand van een moodboard heb ik geconstateerd wat de look & feel is van de film en daar heb ik mijn ontwerpkeuzes op afgestemd. Ik heb bijvoorbeeld simpele kleuren gebruikt: wit, zwart, groen en rood. Een eenvoudig maar ook uitgebreid kleurenpalet. Al deze kleuren hebben een duidelijk contrast met elkaar en bovendien ook geschikt door associatie.
+
+### Visuele toevoegingen
+Zoals eerder genoemd heb ik dit fragment eigen gemaakt door illustratieve elementen toe te voegen aan de video. Op zo een manier dat het de film en geluid ondersteund maar ook een hint van nonsense heeft. 
+
+## Add Nonsense
+### Nonsense als deel van identiteit
+***Illustraties*** <br>
+Mijn illustraties laten frames, beweging en geluid zien, maar het zijn simpelweg stilstaande frames uit het fragment. In die zin kan je deze natuurlijk weglaten, echter ondersteunen deze de 'prioritize identity' en 'ignore conventions' principes.
+
+***Decoratie op tekst*** <br>
+Ik heb met text-emphasis gespeeld voor de captions. Het geeft de mogelijkheid om symbolen toe te voegen aan tekst, waardoor het dus niet aandacht trekt door formaat, maar doordat het iets meer visuele aandacht trekt in de vorm van een pictogram.
+
+Het principe van deze decoratie is om nonsense te zijn, al hebben de symbolen die ik gebruik wel betrekking op het woord, zin of context.
+
+***Eindscherm*** <br>
+Als leuk detail heb ik ook een eindscherm toegevoegd waarop staat: Error 404 baseline not found. Dit was een grappige gag voor aan het eind omdat K niet dichtbij baseline zit en in de formulatie wordt gewezen op het extreem digitale tijdperk in 2049. 
+
+----
+<br>
+
+
+# Eindreflectie
+
+Zoals ik al eerder noemde was deze opdracht een echte uitdaging. Het was een opdracht waarbij het lastig is te bedenken wat het eindproduct zou gaan zijn bij de start. Maar door te experimenteren en nieuwe dingen te proberen kwam er steeds meer duidelijkheid, in visuele stijl maar ook in de mogelijkheden voor deze doelgroep.
+
+In de ondertitels lag een grote uitdaging, zoals ik eerder zei was het hier lastig om de juiste formaten en nadruk te leggen zonder de toon van de dialoog te verliezen.
+
+Ook was de soundscaping van de tweede baseline test erg lastig om vorm te geven, met behulp van een gradient heb ik dit uiteindelijk gedaan. Ik denk dat hier nog verbeterpunten liggen. Het was een grote uitdaging om de toename van spanning en overlappende geluiden te visualiseren.
+
+Kortom, een uitdagende opdracht die erg leerzaam was voor mij. Ik heb veel geëxperimenteerd en vooral ook veel css geschreven. Ik ben tevreden met mijn eindresultaat en visuele identiteit die hier aan vast zit.
